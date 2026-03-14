@@ -62,14 +62,14 @@
 
       <main class="main" id="content">
         <section class="hero section">
-          <div class="container hero__grid">
-            <div>
+          <div class="container hero-home__grid">
+            <div class="hero-copy">
               <span class="eyebrow">Shelf-ish for macOS, iPhone, and Apple Vision Pro</span>
-              <h1 class="display">Your clipboard, but more shelf-ish.</h1>
+              <h1 class="display">A calmer home for everything your clipboard forgets.</h1>
               <p class="lede">
-                Save text, links, files, screenshots, code, audio, and more before they vanish into
-                clipboard oblivion. Pin what matters, let the rest evaporate, and find everything
-                fast when you need it.
+                Shelf-ish keeps fleeting text, links, files, screenshots, code, audio, and more tidy
+                across your Apple devices. Save it quickly, search it later, and let the rest expire
+                before your desktop becomes a junk drawer with ambitions.
               </p>
               <div class="hero__actions">
                 <button class="button button--primary" type="button" disabled aria-disabled="true">
@@ -78,118 +78,48 @@
                 </button>
                 <a class="button button--secondary" href="#screenshots">See screenshots</a>
               </div>
-              <p class="action-note">The App Store link can drop in later without changing the layout.</p>
-              <ul class="hero-list">
-                <li><strong>Local-first by design</strong> so your shelf stays close to home.</li>
-                <li><strong>Expiry by default</strong> keeps clutter from turning into archaeology.</li>
-                <li><strong>Smart, on-device tools</strong> help with summaries, tags, and code snippets.</li>
-              </ul>
+              <p class="action-note">
+                The App Store link can drop in later. For now the button is simply practising restraint.
+              </p>
+
+              <div class="hero-trust">
+                <article class="hero-trust__item">
+                  <strong>Local-first by design</strong>
+                  <span>No analytics, private by default, and sensitive clips can stay concealed.</span>
+                </article>
+                <article class="hero-trust__item">
+                  <strong>Expiry keeps things tidy</strong>
+                  <span>Pin the important bits and let the rest evaporate before clutter becomes culture.</span>
+                </article>
+                <article class="hero-trust__item">
+                  <strong>Search that actually helps</strong>
+                  <span>Find clips by content, source app, type, tag, or date when your memory has clocked off.</span>
+                </article>
+                <article class="hero-trust__item">
+                  <strong>Built for Apple platforms</strong>
+                  <span>Mac first, with iPhone and Apple Vision Pro support for the same colourful shelf.</span>
+                </article>
+              </div>
             </div>
 
-            <div class="hero-stage">
-              <div class="stage-window">
-                <div class="stage-toolbar">
-                  <div class="window-dots" aria-hidden="true">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <div class="window-chip">Private shelf, tidy mind</div>
-                </div>
-
-                <div class="stage-hero">
-                  <img class="app-mark" src="assets/brand/app-icon.png" alt="Shelf-ish app icon">
-                  <div class="stage-copy">
-                    <h2>Keep the useful bits close while you work.</h2>
-                    <p>
-                      Capture a fleeting link, clip a block of code, pin that one thing you absolutely
-                      must not lose, and let the rest expire quietly in the background.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="chip-cloud" aria-label="Example clip types">
-                  <span class="chip chip--cyan">Text</span>
-                  <span class="chip chip--purple">Links</span>
-                  <span class="chip chip--orange">Screenshots</span>
-                  <span class="chip chip--teal">Code</span>
-                  <span class="chip chip--gold">Passwords</span>
-                </div>
-
-                <div class="clip-grid" aria-hidden="true">
-                  <article class="clip-card">
-                    <div class="clip-card__top">
-                      <span class="clip-card__type">
-                        <span class="clip-card__badge clip-card__badge--cyan"></span>
-                        Text clip
-                      </span>
-                      <span class="window-chip">2m ago</span>
-                    </div>
-                    <div class="clip-card__body">
-                      Save the paragraph now, sort it out later, and keep moving.
-                    </div>
-                    <div class="clip-card__meta">
-                      <span>#notes</span>
-                      <span>#workflow</span>
-                    </div>
-                  </article>
-
-                  <article class="clip-card">
-                    <div class="clip-card__top">
-                      <span class="clip-card__type">
-                        <span class="clip-card__badge clip-card__badge--purple"></span>
-                        Quick search
-                      </span>
-                      <span class="window-chip">Live</span>
-                    </div>
-                    <div class="clip-card__body">
-                      Search by content, type, source app, or tag without turning your desktop into
-                      a filing cabinet.
-                    </div>
-                    <div class="clip-card__meta">
-                      <span>Mail</span>
-                      <span>Xcode</span>
-                      <span>#work</span>
-                    </div>
-                  </article>
-
-                  <article class="clip-card">
-                    <div class="clip-card__top">
-                      <span class="clip-card__type">
-                        <span class="clip-card__badge clip-card__badge--teal"></span>
-                        Code helper
-                      </span>
-                      <span class="window-chip">On device</span>
-                    </div>
-                    <div class="clip-card__body">
-                      Explain a snippet, extract action items, or summarise a chunk of text without
-                      shipping your shelf to the nearest analytics bonfire.
-                    </div>
-                    <div class="clip-card__meta">
-                      <span>#swift</span>
-                      <span>#actions</span>
-                    </div>
-                  </article>
-
-                  <article class="clip-card">
-                    <div class="clip-card__top">
-                      <span class="clip-card__type">
-                        <span class="clip-card__badge clip-card__badge--cyan"></span>
-                        Sync when available
-                      </span>
-                      <span class="window-chip">CloudKit</span>
-                    </div>
-                    <div class="clip-card__body">
-                      Shelf-ish stays useful on one device and even better across several when iCloud
-                      sync is available.
-                    </div>
-                    <div class="clip-card__meta">
-                      <span>Mac</span>
-                      <span>iPhone</span>
-                      <span>Vision Pro</span>
-                    </div>
-                  </article>
-                </div>
+            <div class="hero-visual reveal">
+              <div class="hero-canvas">
+                <span class="hero-badge hero-badge--top">Private shelf. Tidy mind.</span>
+                <img
+                  class="hero-mockup"
+                  src="assets/figma/mac-mockup.png"
+                  width="1600"
+                  height="1040"
+                  alt="Shelf-ish running on a Mac with a colourful grid of saved clips."
+                >
+                <img
+                  class="hero-search"
+                  src="assets/figma/search-ui.png"
+                  width="832"
+                  height="759"
+                  alt="Shelf-ish quick search palette with tag and source filters."
+                >
+                <span class="hero-badge hero-badge--bottom">Search, pin, preview, expire.</span>
               </div>
             </div>
           </div>
@@ -197,68 +127,120 @@
 
         <section class="section">
           <div class="container">
-            <div class="section-heading reveal">
-              <h2>Built for fleeting information, not digital hoarding.</h2>
+            <div class="feature-band reveal">
+              <article class="feature-band__item">
+                <span class="label">Capture</span>
+                <h2>Save the useful thing without breaking flow.</h2>
+                <p>
+                  Quick capture, clipboard import, share-sheet saving, and rich previews keep short-lived
+                  information useful instead of vaguely remembered.
+                </p>
+              </article>
+              <article class="feature-band__item">
+                <span class="label">Organise</span>
+                <h2>Everything lands in the right shape.</h2>
+                <p>
+                  Text, links, files, screenshots, phone numbers, audio, and code all get their own
+                  treatment, so the shelf stays glanceable rather than generic.
+                </p>
+              </article>
+              <article class="feature-band__item">
+                <span class="label">Understand</span>
+                <h2>On-device help, minus the analytics theatre.</h2>
+                <p>
+                  Summaries, action items, and code explanation sit close to the clips themselves, where
+                  they are actually useful.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container spotlight">
+            <div class="spotlight__content reveal">
+              <span class="eyebrow">Everything in its right place</span>
+              <h2>Real clips with real context, easy to scan at a glance.</h2>
               <p class="muted">
-                Shelf-ish is a private shelf for the useful scraps you only need for a little while:
-                quick to save, easy to scan, and happy to let the unimportant bits disappear.
+                Shelf-ish recognises what you saved and gives it the right treatment, so screenshots
+                look like screenshots and code looks like code rather than a sad beige rectangle.
               </p>
+              <ul class="hero-list">
+                <li><strong>Ten-plus clip types</strong> covering text, links, files, images, audio, location, and more.</li>
+                <li><strong>Rich previews</strong> for maps, files, images, transcripts, websites, and code snippets.</li>
+                <li><strong>Pinning, snoozing, and expiry</strong> so the shelf stays helpful rather than merely full.</li>
+              </ul>
             </div>
 
-            <div class="feature-grid">
-              <article class="feature-card reveal">
-                <div class="feature-card__icon" aria-hidden="true"></div>
-                <h3>Catch the moment before it vanishes</h3>
-                <p>
-                  Save text, links, screenshots, files, locations, images, phone numbers, and audio
-                  notes while they are still within arm’s reach.
-                </p>
-              </article>
+            <div class="spotlight__media reveal">
+              <div class="spotlight__wall-frame">
+                <div class="spotlight__wall-grid">
+                  <img
+                    src="assets/figma/card-row-1.png"
+                    width="241"
+                    height="1159"
+                    alt="A column of Shelf-ish cards showing text, image, link, phone number, location, and code clips."
+                    loading="lazy"
+                  >
+                  <img
+                    src="assets/figma/card-row-2.png"
+                    width="241"
+                    height="1163"
+                    alt="A column of Shelf-ish cards showing passwords, contacts, audio, maps, and text clips."
+                    loading="lazy"
+                  >
+                  <img
+                    src="assets/figma/card-row-3.png"
+                    width="241"
+                    height="1159"
+                    alt="A column of Shelf-ish cards showing passwords, messages, photos, links, and code clips."
+                    loading="lazy"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-              <article class="feature-card reveal">
-                <div class="feature-card__icon" aria-hidden="true"></div>
-                <h3>Find anything fast</h3>
-                <p>
-                  Search by content, tags, clip type, source app, or date so the right thing shows up
-                  before your train of thought leaves the station.
-                </p>
-              </article>
+        <section class="section">
+          <div class="container spotlight spotlight--reverse">
+            <div class="spotlight__media reveal">
+              <div class="spotlight__search-panel">
+                <img
+                  src="assets/figma/search-ui.png"
+                  width="832"
+                  height="759"
+                  alt="Shelf-ish quick search palette floating on a dark panel with tags and app filters."
+                  loading="lazy"
+                >
+              </div>
+            </div>
 
-              <article class="feature-card reveal">
-                <div class="feature-card__icon" aria-hidden="true"></div>
-                <h3>Use on-device intelligence</h3>
-                <p>
-                  Summarise text, extract action items, explain code snippets, and add automatic tags
-                  with privacy-conscious tooling.
-                </p>
-              </article>
-
-              <article class="feature-card reveal">
-                <div class="feature-card__icon" aria-hidden="true"></div>
-                <h3>Keep the shelf tidy by default</h3>
-                <p>
-                  Pin what matters, snooze what can wait, and let short-lived clips expire so your
-                  shelf stays useful instead of merely impressive.
-                </p>
-              </article>
-
-              <article class="feature-card reveal">
-                <div class="feature-card__icon" aria-hidden="true"></div>
-                <h3>Browse rich previews</h3>
-                <p>
-                  See links, maps, files, images, and code in a glanceable layout designed to feel
-                  native on Apple platforms.
-                </p>
-              </article>
-
-              <article class="feature-card reveal">
-                <div class="feature-card__icon" aria-hidden="true"></div>
-                <h3>Respect privacy from the start</h3>
-                <p>
-                  No analytics, local-first storage, support for hidden sensitive content, and syncing
-                  through Apple’s services when available.
-                </p>
-              </article>
+            <div class="spotlight__content reveal">
+              <span class="eyebrow">Find anything fast</span>
+              <h2>Search by content, source, type, tag, or date.</h2>
+              <p class="muted">
+                When the clip you need is four tasks ago and two coffees behind you, Shelf-ish keeps
+                it within reach instead of leaving you to reconstruct history from vibes alone.
+              </p>
+              <div class="mini-grid">
+                <article class="mini-card">
+                  <strong>Source-aware</strong>
+                  <span>Search clips from Mail, Safari, Messages, Xcode, Slack, and more.</span>
+                </article>
+                <article class="mini-card">
+                  <strong>Type filters</strong>
+                  <span>Jump straight to text, links, files, screenshots, code, audio, or location.</span>
+                </article>
+                <article class="mini-card">
+                  <strong>Tag-friendly</strong>
+                  <span>Auto-tagged and manually tagged clips are both easy to bring back.</span>
+                </article>
+                <article class="mini-card">
+                  <strong>Quick paste</strong>
+                  <span>Pick the right thing and drop it back into your work without the ritual sacrifice.</span>
+                </article>
+              </div>
             </div>
           </div>
         </section>
@@ -268,53 +250,82 @@
             <div class="section-heading reveal">
               <h2><span class="gradient-text">A quick look</span> at Shelf-ish in action.</h2>
               <p class="muted">
-                A few moments from the Shelf-ish experience, from fast capture to focused search and
-                on-device tools that keep useful work moving.
+                A few sharper moments from the product itself, using the actual interface rather than
+                cardboard stand-ins.
               </p>
             </div>
 
             <div class="screenshot-grid">
               <figure class="screenshot-card reveal">
-                <img
-                  src="assets/images/screenshot-quick-capture.svg"
-                  alt="Illustrated Shelf-ish preview showing quick capture cards and coloured tags."
-                >
+                <div class="screenshot-card__image screenshot-card__image--soft">
+                  <img
+                    src="assets/figma/mac-mockup.png"
+                    width="1600"
+                    height="1040"
+                    alt="Shelf-ish shown on a Mac with the shelf open and colourful clips visible."
+                    loading="lazy"
+                  >
+                </div>
                 <figcaption class="screenshot-card__body">
                   <span class="screenshot-card__eyebrow">Preview 01</span>
-                  <h3>Quick capture</h3>
+                  <h3>A shelf that feels native on the desktop</h3>
                   <p class="muted">
-                    Save the useful thing now and sort it properly later, without derailing whatever
-                    you were doing in the first place.
+                    The main Shelf-ish view keeps capture controls, colourful clip cards, and quick
+                    actions close together without turning the interface into a furniture catalogue.
                   </p>
                 </figcaption>
               </figure>
 
               <figure class="screenshot-card reveal">
-                <img
-                  src="assets/images/screenshot-search.svg"
-                  alt="Illustrated Shelf-ish preview showing search chips around a compact search panel."
-                >
+                <div class="screenshot-card__image screenshot-card__image--dark">
+                  <img
+                    src="assets/figma/search-ui.png"
+                    width="832"
+                    height="759"
+                    alt="Shelf-ish search panel with tags, source app chips, and clip type icons."
+                    loading="lazy"
+                  >
+                </div>
                 <figcaption class="screenshot-card__body">
                   <span class="screenshot-card__eyebrow">Preview 02</span>
-                  <h3>Find anything fast</h3>
+                  <h3>Quick search and fast filtering</h3>
                   <p class="muted">
-                    Search across content, tags, source apps, and clip types to get back to the right
-                    item before it slips into folklore.
+                    Tags, source apps, and clip type filters help you get back to the right thing
+                    before it drifts into workplace mythology.
                   </p>
                 </figcaption>
               </figure>
 
               <figure class="screenshot-card reveal">
-                <img
-                  src="assets/images/screenshot-intelligence.svg"
-                  alt="Illustrated Shelf-ish preview showing text summary and code explanation cards."
-                >
+                <div class="screenshot-card__stack" aria-hidden="true">
+                  <img
+                    src="assets/figma/card-row-1.png"
+                    width="241"
+                    height="1159"
+                    alt=""
+                    loading="lazy"
+                  >
+                  <img
+                    src="assets/figma/card-row-2.png"
+                    width="241"
+                    height="1163"
+                    alt=""
+                    loading="lazy"
+                  >
+                  <img
+                    src="assets/figma/card-row-3.png"
+                    width="241"
+                    height="1159"
+                    alt=""
+                    loading="lazy"
+                  >
+                </div>
                 <figcaption class="screenshot-card__body">
                   <span class="screenshot-card__eyebrow">Preview 03</span>
-                  <h3>On-device intelligence</h3>
+                  <h3>Type-aware cards and rich previews</h3>
                   <p class="muted">
-                    Summaries, action items, and code help sit close to the clips themselves, which is
-                    where the useful magic belongs.
+                    Text, links, passwords, maps, phone numbers, audio, screenshots, and code clips
+                    all look distinct enough to scan quickly.
                   </p>
                 </figcaption>
               </figure>
@@ -324,20 +335,30 @@
 
         <section class="section">
           <div class="container">
-            <div class="callout reveal">
-              <h2>Need help or want the privacy details?</h2>
-              <p>
-                The support and privacy pages are included and styled to match, so the whole site is
-                ready to publish on GitHub Pages without a last-minute scramble.
-              </p>
-              <div class="cta-row">
-                <a class="button button--secondary" href="support.html">Visit Support</a>
-                <a class="button button--secondary" href="privacy.html">Read Privacy Policy</a>
-              </div>
-              <p class="note">
-                Questions, bug reports, and privacy requests each have a clear home, which is frankly
-                more than can be said for most clipboards.
-              </p>
+            <div class="split-grid">
+              <article class="callout reveal">
+                <span class="label">Support</span>
+                <h2>Need a hand?</h2>
+                <p>
+                  Bug reports, setup questions, and the occasional “why is my clipboard doing that”
+                  all have a proper home.
+                </p>
+                <div class="cta-row">
+                  <a class="button button--secondary" href="support.html">Visit Support</a>
+                </div>
+              </article>
+
+              <article class="callout reveal">
+                <span class="label">Privacy</span>
+                <h2>Prefer the plain-English version?</h2>
+                <p>
+                  The privacy page explains what Shelf-ish stores, what it does not collect, and where
+                  network activity is used only when needed.
+                </p>
+                <div class="cta-row">
+                  <a class="button button--secondary" href="privacy.html">Read Privacy Policy</a>
+                </div>
+              </article>
             </div>
           </div>
         </section>
