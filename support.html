@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shelf-ish Support</title>
+    <meta
+      name="description"
+      content="Get support for Shelf-ish, including FAQs, bug reporting guidance, and contact details."
+    >
+    <meta name="theme-color" content="#fbfcff">
+    <link rel="icon" href="assets/brand/app-icon.png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container site-header__inner">
+          <a class="brand" href="index.html" aria-label="Shelf-ish home page">
+            <img class="brand__mark" src="assets/brand/app-icon.png" alt="">
+            <span class="brand__name">Shelf-ish</span>
+          </a>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="support.html" aria-current="page">Support</a>
+            <a href="privacy.html">Privacy</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main" id="content">
+        <section class="page-title">
+          <div class="container">
+            <span class="eyebrow">Support</span>
+            <h1 class="display display--small">Help for the useful bits that have gone slightly sideways.</h1>
+            <p class="lede">
+              If Shelf-ish is misbehaving, we would like to hear about it. If you simply need a hand,
+              that is welcome too.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container support-grid">
+            <article class="contact-card reveal">
+              <div class="contact-card__icon" aria-hidden="true"></div>
+              <h3>Support email</h3>
+              <p>
+                Reach us at <a class="text-link" href="mailto:support@shelfish.app">support@shelfish.app</a>
+                for help with bugs, unexpected behaviour, or questions about how Shelf-ish works.
+              </p>
+            </article>
+
+            <article class="contact-card reveal">
+              <div class="contact-card__icon" aria-hidden="true"></div>
+              <h3>Expected response time</h3>
+              <p>
+                A reply within <strong>two business days</strong> is a sensible default. If there is a
+                known outage or a bug causing data loss, you may want to tighten that up later.
+              </p>
+            </article>
+
+            <article class="contact-card reveal">
+              <div class="contact-card__icon" aria-hidden="true"></div>
+              <h3>Best way to report a bug</h3>
+              <p>
+                Send a short description of what happened, what you expected instead, and the steps
+                that led up to it. Screenshots are welcome. Computers can be strangely coy witnesses.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container split-grid">
+            <article class="callout reveal">
+              <h2>What to include in a support request</h2>
+              <ul class="plain-list muted">
+                <li>The device and platform you were using, such as macOS, iPhone, or Apple Vision Pro.</li>
+                <li>Your app version and operating system version.</li>
+                <li>A brief description of what you expected to happen.</li>
+                <li>What actually happened instead, including any error message.</li>
+                <li>Whether the issue happens every time or only occasionally.</li>
+                <li>A screenshot or screen recording if it helps explain the issue clearly.</li>
+              </ul>
+            </article>
+
+            <article class="callout reveal">
+              <h2>How to report a bug</h2>
+              <p>
+                Send an email to <a class="text-link" href="mailto:support@shelfish.app">support@shelfish.app</a>
+                with the subject line <strong>Bug report</strong>. If the problem involves a specific
+                clip type, mention whether it was text, a link, code, audio, a screenshot, or
+                something else.
+              </p>
+              <p class="note">
+                If the app appears to be syncing incorrectly, include which devices were involved and
+                whether iCloud sync was enabled.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section faq">
+          <div class="container">
+            <div class="section-heading reveal">
+              <h2>Frequently asked questions</h2>
+              <p class="faq-intro">
+                Clear answers for the bits people usually ask first. You can trim, expand, or
+                personalise this later without upsetting the layout.
+              </p>
+            </div>
+
+            <div class="faq-items">
+              <details class="faq-item reveal">
+                <summary>What platforms does Shelf-ish support?</summary>
+                <p>
+                  Shelf-ish is designed for macOS, iPhone, Apple Vision Pro, and supporting widgets.
+                </p>
+              </details>
+
+              <details class="faq-item reveal">
+                <summary>Does Shelf-ish sync across devices?</summary>
+                <p>
+                  Shelf-ish can use CloudKit when it is available, with local storage as a fallback
+                  when it is not. That means it still works on a single device even if sync is not active.
+                </p>
+              </details>
+
+              <details class="faq-item reveal">
+                <summary>Does the app watch my clipboard all the time?</summary>
+                <p>
+                  On supported platforms, live capture is optional. Users can pause capture, exclude
+                  certain apps, or use manual save actions instead.
+                </p>
+              </details>
+
+              <details class="faq-item reveal">
+                <summary>How do expiring clips work?</summary>
+                <p>
+                  Unpinned clips can expire automatically after a set time, which helps keep the shelf
+                  tidy. Important clips can be pinned or snoozed so they stick around longer.
+                </p>
+              </details>
+
+              <details class="faq-item reveal">
+                <summary>Why is a preview or transcript missing?</summary>
+                <p>
+                  Some features depend on network access, platform capabilities, or optional model
+                  downloads. If a preview does not load, ask the user to check connectivity and then
+                  try again.
+                </p>
+              </details>
+
+              <details class="faq-item reveal">
+                <summary>What should I do if the app feels slow or stuck?</summary>
+                <p>
+                  Restart the app, check your operating system version, and confirm whether the issue
+                  happens with one clip or every clip. If it persists, send the steps to reproduce it.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container site-footer__inner">
+          <div class="footer-bar">
+            <div>© <span data-year>2026</span> Shelf-ish. All rights reserved.</div>
+            <nav class="footer-nav" aria-label="Footer">
+              <a href="index.html">Home</a>
+              <a href="support.html">Support</a>
+              <a href="privacy.html">Privacy</a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

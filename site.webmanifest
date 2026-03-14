@@ -1,0 +1,21 @@
+{
+  "name": "Shelf-ish",
+  "short_name": "Shelf-ish",
+  "description": "A tidy shelf for temporary clips.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fbfcff",
+  "theme_color": "#fbfcff",
+  "icons": [
+    {
+      "src": "assets/brand/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/brand/app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

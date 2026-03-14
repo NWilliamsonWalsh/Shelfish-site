@@ -1,0 +1,81 @@
+<svg width="1440" height="1080" viewBox="0 0 1440 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="1080" fill="#F8FAFF"/>
+  <circle cx="1214" cy="158" r="270" fill="#F3AED8" fill-opacity="0.56"/>
+  <circle cx="228" cy="910" r="240" fill="#8BE2EE" fill-opacity="0.38"/>
+  <rect x="88" y="92" width="318" height="68" rx="34" fill="white" fill-opacity="0.92"/>
+  <circle cx="124" cy="126" r="11" fill="url(#paint0_linear_0_1)"/>
+  <text x="152" y="136" fill="#4E586D" font-family="Arial, sans-serif" font-size="40" font-weight="700">Shelf-ish</text>
+  <text x="92" y="308" fill="#121826" font-family="Arial, sans-serif" font-size="118" font-weight="800">On-device</text>
+  <text x="92" y="420" fill="#121826" font-family="Arial, sans-serif" font-size="118" font-weight="800">intelligence</text>
+  <text x="92" y="508" fill="#566176" font-family="Arial, sans-serif" font-size="52" font-weight="500">Auto-tag, summarise, and explain</text>
+  <text x="92" y="574" fill="#566176" font-family="Arial, sans-serif" font-size="52" font-weight="500">the clips you already saved.</text>
+  <rect x="92" y="666" width="38" height="38" rx="19" fill="white" fill-opacity="0.92" stroke="#E5D8FB"/>
+  <path d="M106 685.5L116.5 696L136 674.5" stroke="#8F21E0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="160" y="694" fill="#4E586D" font-family="Arial, sans-serif" font-size="34" font-weight="700">Summaries stay close to the clip</text>
+  <rect x="92" y="744" width="38" height="38" rx="19" fill="white" fill-opacity="0.92" stroke="#E5D8FB"/>
+  <path d="M106 763.5L116.5 774L136 752.5" stroke="#8F21E0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="160" y="772" fill="#4E586D" font-family="Arial, sans-serif" font-size="34" font-weight="700">Action items do not get lost</text>
+  <rect x="92" y="822" width="38" height="38" rx="19" fill="white" fill-opacity="0.92" stroke="#E5D8FB"/>
+  <path d="M106 841.5L116.5 852L136 830.5" stroke="#8F21E0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="160" y="850" fill="#4E586D" font-family="Arial, sans-serif" font-size="34" font-weight="700">Code clips can be explained in place</text>
+  <g filter="url(#filter0_d_0_1)">
+    <rect x="610" y="118" width="430" height="460" rx="40" fill="white" fill-opacity="0.84"/>
+    <rect x="636" y="144" width="378" height="408" rx="30" fill="#FDFEFF"/>
+    <rect x="662" y="170" width="216" height="44" rx="22" fill="#E9F9FD"/>
+    <text x="710" y="199" fill="#4E586D" font-family="Arial, sans-serif" font-size="24" font-weight="700">Text clip</text>
+    <text x="662" y="270" fill="#121826" font-family="Arial, sans-serif" font-size="44" font-weight="800">Keep the useful bits</text>
+    <text x="662" y="322" fill="#4E586D" font-family="Arial, sans-serif" font-size="28" font-weight="500">Capture something in a second and</text>
+    <text x="662" y="360" fill="#4E586D" font-family="Arial, sans-serif" font-size="28" font-weight="500">preview it clearly when you need it.</text>
+    <rect x="1042" y="210" width="214" height="120" rx="26" fill="white"/>
+    <rect x="1062" y="236" width="174" height="34" rx="17" fill="#F2F0F7"/>
+    <text x="1088" y="258" fill="#121826" font-family="Arial, sans-serif" font-size="22" font-weight="700">Short summary</text>
+    <rect x="1062" y="282" width="146" height="32" rx="16" fill="#8F21E0"/>
+    <text x="1082" y="304" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="700">Standard summary</text>
+    <rect x="662" y="404" width="324" height="112" rx="22" fill="#F1FBFE"/>
+    <text x="688" y="448" fill="#4E586D" font-family="Arial, sans-serif" font-size="24" font-weight="700">Key points</text>
+    <rect x="688" y="472" width="212" height="10" rx="5" fill="#A5E8F2"/>
+    <rect x="688" y="492" width="182" height="10" rx="5" fill="#C1EFF5"/>
+  </g>
+  <g filter="url(#filter1_d_0_1)">
+    <rect x="930" y="420" width="410" height="468" rx="40" fill="white" fill-opacity="0.84"/>
+    <rect x="956" y="446" width="358" height="416" rx="30" fill="#FDFEFF"/>
+    <rect x="982" y="474" width="188" height="44" rx="22" fill="#E7FBF5"/>
+    <text x="1036" y="503" fill="#4E586D" font-family="Arial, sans-serif" font-size="24" font-weight="700">Code clip</text>
+    <rect x="982" y="548" width="306" height="226" rx="24" fill="#101217"/>
+    <text x="1012" y="608" fill="#E85AA6" font-family="Courier New, monospace" font-size="24" font-weight="700">private extension ShelfItem {</text>
+    <text x="1034" y="644" fill="#24D2C0" font-family="Courier New, monospace" font-size="24">var summaryLabel: String {</text>
+    <text x="1054" y="680" fill="#B5C7FF" font-family="Courier New, monospace" font-size="24">return "Pinned"</text>
+    <text x="1034" y="716" fill="#24D2C0" font-family="Courier New, monospace" font-size="24">}</text>
+    <text x="1012" y="752" fill="#E85AA6" font-family="Courier New, monospace" font-size="24">}</text>
+    <rect x="1228" y="506" width="182" height="88" rx="20" fill="white"/>
+    <text x="1252" y="544" fill="#121826" font-family="Arial, sans-serif" font-size="22" font-weight="700">Explain code</text>
+    <rect x="1252" y="554" width="134" height="28" rx="14" fill="#8F21E0"/>
+    <text x="1270" y="574" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="700">Improve code</text>
+  </g>
+  <defs>
+    <filter id="filter0_d_0_1" x="576" y="98" width="714" height="528" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="14"/>
+      <feGaussianBlur stdDeviation="17"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0705882 0 0 0 0 0.0941176 0 0 0 0 0.14902 0 0 0 0.12 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+    <filter id="filter1_d_0_1" x="896" y="400" width="548" height="536" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="14"/>
+      <feGaussianBlur stdDeviation="17"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0705882 0 0 0 0 0.0941176 0 0 0 0 0.14902 0 0 0 0.12 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear_0_1" x1="113" y1="126" x2="135" y2="126" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8755"/>
+      <stop offset="0.35" stop-color="#E02980"/>
+      <stop offset="0.68" stop-color="#8F21E0"/>
+      <stop offset="1" stop-color="#00B3D1"/>
+    </linearGradient>
+  </defs>
+</svg>
