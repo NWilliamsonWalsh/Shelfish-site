@@ -2,7 +2,7 @@
   "name": "Shelf-ish",
   "short_name": "Shelf-ish",
   "description": "A tidy shelf for temporary clips.",
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#fbfcff",
   "theme_color": "#fbfcff",
