@@ -77,6 +77,10 @@ a {
   text-decoration: none;
 }
 
+a[href^="mailto:"] {
+  overflow-wrap: anywhere;
+}
+
 button,
 input,
 textarea,
@@ -573,6 +577,28 @@ select {
   gap: 0.9rem;
 }
 
+.plain-list {
+  display: grid;
+  gap: 0.82rem;
+}
+
+.plain-list li {
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.plain-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(224, 41, 128, 0.95), rgba(0, 179, 209, 0.95));
+  box-shadow: 0 0 0 4px rgba(224, 41, 128, 0.06);
+}
+
 .hero-list li,
 .icon-list li {
   display: flex;
@@ -783,17 +809,63 @@ select {
 .contact-card,
 .policy-card,
 .footer-card {
-  padding: 1.25rem;
+  padding: 1.4rem;
 }
 
-.feature-card__icon,
-.contact-card__icon,
-.policy-card__icon {
+.feature-card__icon {
   width: 2.7rem;
   height: 2.7rem;
   border-radius: 18px;
   background: var(--gradient-primary);
   box-shadow: 0 14px 28px rgba(143, 33, 224, 0.16);
+}
+
+.contact-card {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+}
+
+.contact-card__icon {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 20px;
+  background: var(--gradient-primary);
+  box-shadow: 0 14px 28px rgba(143, 33, 224, 0.16);
+  color: #fff;
+}
+
+.contact-card__icon svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  stroke: currentColor;
+  stroke-width: 1.85;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.policy-card {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+  padding: 1.55rem;
+}
+
+.policy-card__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.65rem;
+  height: 2.65rem;
+  border-radius: 999px;
+  background: var(--gradient-primary);
+  box-shadow: 0 14px 28px rgba(143, 33, 224, 0.16);
+  color: #fff;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
 }
 
 .feature-card h3,
@@ -811,6 +883,16 @@ select {
   min-height: 100%;
 }
 
+.support-grid {
+  gap: 1.25rem;
+}
+
+.support-grid .contact-card p,
+.policy-card p {
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
 .faq {
   margin-top: 0.4rem;
 }
@@ -822,7 +904,7 @@ select {
 }
 
 .faq-item {
-  padding: 1rem 1.15rem;
+  padding: 1.08rem 1.2rem;
 }
 
 .faq-item summary {
@@ -867,7 +949,7 @@ select {
 
 .policy-stack {
   display: grid;
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .policy-meta {
@@ -883,6 +965,10 @@ select {
   background: rgba(20, 27, 45, 0.06);
   color: var(--ink-faint);
   font-size: 0.83rem;
+  font-weight: 800;
+}
+
+.policy-meta a {
   font-weight: 800;
 }
 

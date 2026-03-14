@@ -20,8 +20,8 @@ Live URL: `https://nwilliamsonwalsh.github.io/Shelfish-site/`
 ## Before publishing
 
 1. Replace the placeholder email addresses if needed:
-   - `support@shelfish.app`
-   - `privacy@shelfish.app`
+   - `shelfishapp@gmail.com`
+   - `shelfishapp@gmail.com`
 2. Replace the temporary App Store button state with your real App Store URL when the app is live.
 3. Swap the SVG screenshot placeholders for your exported App Store or product screenshots if you want final product imagery.
 4. If you later add a custom domain, you can also add a `CNAME` file and update any social metadata with the final URL.
