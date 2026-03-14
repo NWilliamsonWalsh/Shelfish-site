@@ -31,7 +31,7 @@
   --teal: #009987;
   --gradient-primary: linear-gradient(135deg, #ff8755 0%, #e02980 38%, #8f21e0 70%, #00b3d1 100%);
   --gradient-rainbow: linear-gradient(90deg, #e02980 0%, #e06621 18%, #e0b300 34%, #33c759 52%, #00b3d1 68%, #0060e0 84%, #8f21e0 100%);
-  --max-width: 1180px;
+  --max-width: 1240px;
   --header-height: 86px;
 }
 
@@ -422,7 +422,7 @@ select {
 
 .section-heading {
   max-width: 42rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.35rem;
 }
 
 .section-heading h2 {
@@ -432,7 +432,7 @@ select {
 
 .section-heading--split {
   display: grid;
-  gap: 1rem;
+  gap: 1.35rem;
   max-width: none;
 }
 
@@ -440,16 +440,29 @@ select {
   max-width: 32rem;
 }
 
+.section-heading--editorial .muted {
+  max-width: 28rem;
+}
+
+.section-heading--gallery {
+  max-width: 46rem;
+}
+
+.section-heading--gallery .muted {
+  max-width: 38rem;
+  font-size: 1.05rem;
+}
+
 .editorial-grid,
 .gallery-notes {
   display: grid;
-  gap: 1.2rem;
+  gap: 1.4rem;
 }
 
 .editorial-feature,
 .gallery-note {
   position: relative;
-  padding-top: 1rem;
+  padding-top: 1.08rem;
   border-top: 1px solid rgba(20, 27, 45, 0.1);
 }
 
@@ -464,23 +477,23 @@ select {
 }
 
 .editorial-feature h3 {
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.62rem;
   font-size: clamp(1.45rem, 3vw, 2rem);
 }
 
 .card-lanes {
   position: relative;
   display: grid;
-  gap: 1rem;
-  margin-top: 2.2rem;
+  gap: 0.78rem;
+  margin-top: 1.45rem;
 }
 
 .card-lane {
   position: relative;
   overflow: hidden;
-  padding: 0.85rem 0;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 9%, #000 91%, transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0, #000 9%, #000 91%, transparent 100%);
+  padding: 0.75rem 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
 }
 
 .card-lane__track {
@@ -494,7 +507,7 @@ select {
 }
 
 .card-lane img {
-  width: clamp(54rem, 112vw, 90rem);
+  width: clamp(60rem, 116vw, 94rem);
   height: auto;
   flex: 0 0 auto;
   filter: drop-shadow(0 24px 34px rgba(20, 27, 45, 0.15));
@@ -513,6 +526,10 @@ select {
   margin-bottom: 0.28rem;
   font-size: 1rem;
   letter-spacing: -0.03em;
+}
+
+.gallery-notes {
+  margin-top: 1.5rem;
 }
 
 .feature-card,
@@ -730,6 +747,10 @@ select {
   padding: 1.35rem;
 }
 
+.callout h2 {
+  margin: 0.85rem 0 0.52rem;
+}
+
 .callout::after {
   content: "";
   position: absolute;
@@ -898,6 +919,19 @@ select {
   gap: 0.8rem 1rem;
 }
 
+.split-grid--cta {
+  gap: 1.25rem;
+}
+
+.split-grid--cta .callout {
+  min-height: 100%;
+  padding: 1.55rem;
+}
+
+.split-grid--cta .callout p {
+  max-width: 28rem;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -924,14 +958,15 @@ select {
   }
 
   .hero-home__grid {
-    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
     align-items: center;
-    gap: 2rem;
+    gap: 2.3rem;
   }
 
   .section-heading--split {
-    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    grid-template-columns: minmax(0, 1.04fr) minmax(18rem, 0.96fr);
     align-items: start;
+    gap: 2rem;
   }
 
   #screenshots {
@@ -945,7 +980,7 @@ select {
   }
 
   .card-lanes {
-    gap: 1.1rem;
+    gap: 0.95rem;
   }
 
   .split-grid,
@@ -968,7 +1003,8 @@ select {
 
 @media (min-width: 980px) {
   .hero-home__grid {
-    gap: 3rem;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 3.8rem;
   }
 
   .hero-visual {
@@ -981,7 +1017,7 @@ select {
   }
 
   .hero-mockup {
-    width: min(110%, 60rem);
+    width: min(112%, 62rem);
   }
 
   .editorial-grid,
@@ -990,16 +1026,16 @@ select {
   }
 
   .card-lanes {
-    width: calc(100% + 4rem);
-    margin-left: -2rem;
+    width: calc(100% + 6rem);
+    margin-left: -3rem;
   }
 
   .card-lane {
-    padding: 1rem 0;
+    padding: 0.9rem 0;
   }
 
   .card-lane img {
-    width: clamp(68rem, 112vw, 104rem);
+    width: clamp(74rem, 118vw, 110rem);
   }
 
   .support-grid,
