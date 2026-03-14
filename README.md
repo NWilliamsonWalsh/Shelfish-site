@@ -2,6 +2,8 @@
 
 This folder contains a simple static marketing site for Shelf-ish, ready to host on GitHub Pages.
 
+Live URL: `https://nwilliamsonwalsh.github.io/Shelfish-site/`
+
 ## Structure
 
 - `index.html` - home and app overview
