@@ -5,64 +5,58 @@ document.querySelectorAll("[data-year]").forEach((element) => {
 });
 
 const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
-const cardStreams = document.querySelector("[data-card-streams]");
+const cardLanes = document.querySelector("[data-card-lanes]");
 
-if (cardStreams) {
-  const streamItems = Array.from(cardStreams.querySelectorAll(".card-stream"));
+if (cardLanes) {
+  const laneTracks = Array.from(cardLanes.querySelectorAll(".card-lane__track"));
   let rafId = 0;
 
-  const resetStreams = () => {
-    streamItems.forEach((item) => {
-      item.style.setProperty("--stream-x", "0px");
-      item.style.setProperty("--stream-y", "0px");
-      item.style.setProperty("--stream-rotate", "0deg");
+  const resetLanes = () => {
+    laneTracks.forEach((track) => {
+      track.style.setProperty("--lane-shift", "0px");
     });
   };
 
-  const updateStreams = () => {
+  const updateLanes = () => {
     rafId = 0;
 
     if (motionPreference.matches) {
-      resetStreams();
+      resetLanes();
       return;
     }
 
-    const rect = cardStreams.getBoundingClientRect();
+    const rect = cardLanes.getBoundingClientRect();
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     const progress = (viewportHeight - rect.top) / (rect.height + viewportHeight);
     const centredProgress = Math.max(-1, Math.min(1, progress * 2 - 1));
     const scale = Math.min(window.innerWidth / 1440, 1);
 
-    streamItems.forEach((item) => {
-      const x = Number.parseFloat(item.dataset.streamX || "0") * centredProgress * scale;
-      const y = Number.parseFloat(item.dataset.streamY || "0") * centredProgress * scale;
-      const rotation = Number.parseFloat(item.dataset.streamRotate || "0") * centredProgress;
-
-      item.style.setProperty("--stream-x", `${x.toFixed(2)}px`);
-      item.style.setProperty("--stream-y", `${y.toFixed(2)}px`);
-      item.style.setProperty("--stream-rotate", `${rotation.toFixed(2)}deg`);
+    laneTracks.forEach((track) => {
+      const amount = Number.parseFloat(track.parentElement?.dataset.laneShift || "0");
+      const shift = amount * centredProgress * scale;
+      track.style.setProperty("--lane-shift", `${shift.toFixed(2)}px`);
     });
   };
 
-  const requestStreamUpdate = () => {
+  const requestLaneUpdate = () => {
     if (rafId) {
       return;
     }
 
-    rafId = window.requestAnimationFrame(updateStreams);
+    rafId = window.requestAnimationFrame(updateLanes);
   };
 
   const handleMotionChange = () => {
     if (motionPreference.matches) {
-      resetStreams();
+      resetLanes();
       return;
     }
 
-    requestStreamUpdate();
+    requestLaneUpdate();
   };
 
-  window.addEventListener("scroll", requestStreamUpdate, { passive: true });
-  window.addEventListener("resize", requestStreamUpdate);
+  window.addEventListener("scroll", requestLaneUpdate, { passive: true });
+  window.addEventListener("resize", requestLaneUpdate);
 
   if (typeof motionPreference.addEventListener === "function") {
     motionPreference.addEventListener("change", handleMotionChange);
@@ -70,5 +64,5 @@ if (cardStreams) {
     motionPreference.addListener(handleMotionChange);
   }
 
-  requestStreamUpdate();
+  requestLaneUpdate();
 }
