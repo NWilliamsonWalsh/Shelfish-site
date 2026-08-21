@@ -17,14 +17,12 @@ Live URL: `https://shelfishclipboard.com/`
 - `site.webmanifest` - install metadata and icon references
 - `.nojekyll` - tells GitHub Pages to serve the site as plain static files
 
-## Before publishing
+## Publishing checks
 
-1. Replace the placeholder email addresses if needed:
-   - `shelfishapp@gmail.com`
-   - `shelfishapp@gmail.com`
-2. Replace the temporary App Store button state with your real App Store URL when the app is live.
-3. Swap the SVG screenshot placeholders for your exported App Store or product screenshots if you want final product imagery.
-4. If you later add a custom domain, you can also add a `CNAME` file and update any social metadata with the final URL.
+1. Confirm the support address remains `nate@weareopenr.com`.
+2. Confirm the Mac App Store link resolves to the current Shelf-ish listing.
+3. Keep unreleased platform claims out of the live site.
+4. Update `privacy.html` whenever the app’s data handling or permissions change.
 
 ## GitHub Pages
 
