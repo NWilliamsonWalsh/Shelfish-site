@@ -33,3 +33,12 @@ Live URL: `https://shelfishclipboard.com/`
 5. Leave `.nojekyll` in place so GitHub Pages serves the files exactly as-is.
 
 All links in the site are relative, so it should work on a standard GitHub Pages project site without further path changes.
+
+## Brand assets
+
+The 29 October 2026 website assets use the approved overlapping rainbow-card
+identity from the Shelfish app checkout. Header artwork uses ShelfLogoCompact
+(the muted transparent in-app symbol); favicons, installed-site icons, touch
+icons and social metadata use the app icon. Regenerate the master identity in
+the app repository before copying updated exports here. Asset URLs are versioned
+so browsers can replace the previous shelf mark.
