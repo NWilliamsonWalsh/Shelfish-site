@@ -19,7 +19,7 @@ Live URL: `https://shelfishclipboard.com/`
 
 ## Publishing checks
 
-1. Confirm the support address remains `nate@weareopenr.com`.
+1. Use only the publisher-approved dedicated Shelf-ish contact. Do not publish an employer email address.
 2. Confirm the Mac App Store link resolves to the current Shelf-ish listing.
 3. Keep unreleased platform claims out of the live site.
 4. Update `privacy.html` whenever the app’s data handling or permissions change.
