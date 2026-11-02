@@ -13,7 +13,8 @@ Live URL: `https://shelfishclipboard.com/`
 - `styles.css` - shared site styling
 - `script.js` - small progressive-enhancement script for reveal animations and the footer year
 - `assets/brand/` - Shelf-ish logo and app icon
-- `assets/images/` - branded screenshot placeholder SVGs
+- `assets/images/` - legacy screenshot placeholder SVGs
+- `assets/illustrations/` - approved hand-drawn artwork showing the updated app UI
 - `site.webmanifest` - install metadata and icon references
 - `.nojekyll` - tells GitHub Pages to serve the site as plain static files
 
@@ -42,3 +43,15 @@ identity from the Shelfish app checkout. Header artwork uses ShelfLogoCompact
 icons and social metadata use the app icon. Regenerate the master identity in
 the app repository before copying updated exports here. Asset URLs are versioned
 so browsers can replace the previous shelf mark.
+
+## 2 November 2026 interface refresh
+
+The homepage uses the four approved iPhone-onboarding illustrations, exported
+as web JPEGs (roughly 1.1 MB in total). They are labelled as illustrations,
+not product screenshots. White cards, thin type-colour accents and neutral
+controls replace the older full-colour card-row gallery. The original gallery
+assets remain available in `assets/figma/`.
+
+The iPhone app is not yet publicly available, as confirmed on 2 November 2026.
+The site labels it as coming soon and retains the Mac App Store download link.
+Do not infer a public release from working development builds.
