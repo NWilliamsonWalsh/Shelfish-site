@@ -6,14 +6,14 @@
     <title>Shelf-ish | A tidy shelf for temporary clips</title>
     <meta
       name="description"
-      content="Shelf-ish keeps text, links, tables, files, screenshots, code, and audio close at hand on your Mac. iPhone is coming soon."
+      content="Shelf-ish keeps text, links, files, screenshots, code, audio, and more tidy on your Mac."
     >
     <meta name="theme-color" content="#fbfcff">
     <link rel="canonical" href="https://shelfishclipboard.com/">
     <meta property="og:title" content="Shelf-ish | A tidy shelf for temporary clips">
     <meta
       property="og:description"
-      content="Shelf-ish keeps text, links, tables, files, screenshots, code, and audio close at hand on your Mac. iPhone is coming soon."
+      content="Shelf-ish keeps text, links, files, screenshots, code, audio, and more tidy on your Mac."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://shelfishclipboard.com/">
@@ -25,7 +25,7 @@
     <meta name="twitter:title" content="Shelf-ish | A tidy shelf for temporary clips">
     <meta
       name="twitter:description"
-      content="Shelf-ish keeps text, links, tables, files, screenshots, code, and audio close at hand on your Mac. iPhone is coming soon."
+      content="Shelf-ish keeps text, links, files, screenshots, code, audio, and more tidy on your Mac."
     >
     <meta
       name="twitter:image"
@@ -40,7 +40,7 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css?v=20261102">
+    <link rel="stylesheet" href="styles.css?v=20261029">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -64,10 +64,10 @@
         <section class="hero section">
           <div class="container hero-home__grid">
             <div class="hero-copy">
-              <span class="eyebrow">For Mac. Coming soon to iPhone.</span>
+              <span class="eyebrow">Shelf-ish for macOS</span>
               <h1 class="display">Your clipboard, but more shelf-ish.</h1>
               <p class="lede">
-                Save text, links, tables, files, screenshots, code, and audio before they vanish into
+                Save text, links, files, screenshots, code, audio, and more before they vanish into
                 clipboard oblivion. Shelf-ish keeps the useful bits close, lets the rest expire
                 quietly, and makes the whole thing feel a lot less feral.
               </p>
@@ -75,24 +75,23 @@
                 <a class="button button--primary" href="https://apps.apple.com/gb/app/shelf-ish/id6759488585?mt=12">
                   View on the Mac App Store
                 </a>
-                <a class="button button--secondary" href="#screenshots">Take a look</a>
+                <a class="button button--secondary" href="#screenshots">See screenshots</a>
               </div>
               <p class="action-note">
-                Available now for macOS. iPhone is coming soon. No subscription and no creepy tracking.
+                Available now for macOS. No subscription and no creepy tracking.
               </p>
 
             </div>
 
-            <figure class="hero-visual reveal">
+            <div class="hero-visual reveal">
               <img
                 class="hero-mockup"
-                src="assets/illustrations/02-sync.jpg?v=20261102"
-                width="1672"
-                height="941"
-                alt="Hand-drawn preview of Shelf-ish on Mac and iPhone, with white clip cards, neutral controls and the rainbow-card logo."
+                src="assets/figma/mac-mockup-tight.png"
+                width="1545"
+                height="934"
+                alt="Shelf-ish running on a Mac with a colourful grid of saved clips."
               >
-              <figcaption class="artwork-caption">A look at the new interface. iPhone is coming soon.</figcaption>
-            </figure>
+            </div>
 
             <section class="hero-highlights" aria-label="Key features">
               <article class="hero-highlight">
@@ -105,7 +104,7 @@
               </article>
               <article class="hero-highlight">
                 <strong>Cards that match the content</strong>
-                <p>Readable white cards, quiet controls and a little colour for each clip type. Tables get a proper grid, too.</p>
+                <p>Text looks like text, code looks like code, and screenshots stop pretending to be generic beige rectangles.</p>
               </article>
               <article class="hero-highlight">
                 <strong>Private by default</strong>
@@ -141,7 +140,7 @@
                 <span class="editorial-feature__index">02</span>
                 <h3>Organise</h3>
                 <p>
-                  Type-aware cards, table grids, previews, and pinning keep links, screenshots, code, audio, and
+                  Type-aware cards, previews, and pinning keep links, screenshots, code, audio, and
                   little scraps of context from collapsing into one bland pile.
                 </p>
               </article>
@@ -161,43 +160,87 @@
           <div class="container">
             <div class="section-heading section-heading--gallery reveal">
               <span class="label">In action</span>
-              <h2>Useful scraps. A clearer shelf.</h2>
+              <h2><span class="gradient-text">Real cards.</span> Different shapes, different sizes, still easy to scan.</h2>
               <p class="muted">
-                White cards, a little colour and room for the content to breathe. These hand-drawn
-                illustrations show the updated interface; they are not product screenshots.
+                These are the actual Shelf-ish card rows from the product itself, left to be a bit
+                irregular on purpose. The page now gets out of their way and lets the interface do the talking.
               </p>
             </div>
 
-            <div class="artwork-gallery reveal">
-              <figure class="artwork-panel artwork-panel--wide">
-                <img src="assets/illustrations/01-shelf.jpg?v=20261102" width="1672" height="941"
-                  alt="Hand-drawn white clip cards for a note, pinned link, photo, audio recording, code and a table." loading="lazy">
-                <figcaption><h3>A place for the useful bits.</h3><p>Notes, links, images, recordings, code and tables — each with a preview that suits the content.</p></figcaption>
+            <div class="card-lanes reveal" data-card-lanes>
+              <figure class="card-lane" data-lane-shift="-220">
+                <div class="card-lane__track">
+                  <img
+                    src="assets/figma/h-card-row-1.png"
+                    width="1591"
+                    height="169"
+                    alt="A horizontal row of Shelf-ish cards showing text, password, location, and link clips in varied widths."
+                    loading="lazy"
+                  >
+                  <img
+                    src="assets/figma/h-card-row-1.png"
+                    width="1591"
+                    height="169"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  >
+                </div>
               </figure>
-              <figure class="artwork-panel">
-                <img src="assets/illustrations/03-actions.jpg?v=20261102" width="1672" height="941"
-                  alt="Illustrated preview of the forthcoming iPhone interface, showing a saved link and copy, share, pin and more actions." loading="lazy">
-                <figcaption><h3>Find it. Use it. Carry on.</h3><p>Preview the clip, copy it, share it or pin it for later. A preview of Shelf-ish on iPhone, coming soon.</p></figcaption>
+
+              <figure class="card-lane" data-lane-shift="180">
+                <div class="card-lane__track">
+                  <img
+                    src="assets/figma/h-card-row-2.png"
+                    width="1591"
+                    height="173"
+                    alt="A horizontal row of Shelf-ish cards including phone number, audio, map, text, and code clips."
+                    loading="lazy"
+                  >
+                  <img
+                    src="assets/figma/h-card-row-2.png"
+                    width="1591"
+                    height="173"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  >
+                </div>
               </figure>
-              <figure class="artwork-panel">
-                <img src="assets/illustrations/04-mac.jpg?v=20261102" width="1672" height="941"
-                  alt="Hand-drawn MacBook with the current overlapping rainbow-card Shelf-ish icon and an App Store button." loading="lazy">
-                <figcaption><h3>At home on your Mac.</h3><p>Optional clipboard capture keeps useful scraps close while you work. Pause it whenever you like.</p></figcaption>
+
+              <figure class="card-lane" data-lane-shift="-160">
+                <div class="card-lane__track">
+                  <img
+                    src="assets/figma/h-card-row-3.png"
+                    width="1591"
+                    height="169"
+                    alt="A horizontal row of Shelf-ish cards with screenshots, code, and colourful mixed clip previews."
+                    loading="lazy"
+                  >
+                  <img
+                    src="assets/figma/h-card-row-3.png"
+                    width="1591"
+                    height="169"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  >
+                </div>
               </figure>
             </div>
 
             <div class="gallery-notes reveal">
               <article class="gallery-note">
                 <strong>Type-aware cards</strong>
-                <p>Links, tables, screenshots, audio, passwords, phone numbers, maps, and code all have distinct layouts so you can scan instead of squint.</p>
+                <p>Links, screenshots, audio, passwords, phone numbers, maps, and code all have distinct layouts so you can scan instead of squint.</p>
               </article>
               <article class="gallery-note">
                 <strong>Rich previews</strong>
                 <p>The shelf keeps the useful context attached, whether that is an image, a code block, a transcript snippet, or a location preview.</p>
               </article>
               <article class="gallery-note">
-                <strong>Quiet by design</strong>
-                <p>Neutral controls keep the focus on your clips. Colour helps distinguish content without turning the whole shelf into a sweet shop.</p>
+                <strong>Intentional clutter</strong>
+                <p>The cards are varied because real saved things are varied. The job of the product is to make that mess feel readable, not sterile.</p>
               </article>
             </div>
           </div>
