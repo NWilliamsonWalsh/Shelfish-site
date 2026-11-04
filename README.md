@@ -1,44 +1,25 @@
-# Shelf-ish static site
+# Shelf-ish website
 
-This folder contains a simple static marketing site for Shelf-ish, ready to host on GitHub Pages.
+Public site: https://shelfishclipboard.com/
 
-Live URL: `https://shelfishclipboard.com/`
+Static HTML, CSS and JavaScript hosted by GitHub Pages from this personal
+repository’s `main` branch, at the repository root. `CNAME` owns the existing
+custom domain; `.nojekyll` preserves plain static serving.
 
-## Structure
+The 4 November 2026 release was approved by the owner after local review. It
+includes the cards/context homepage, actual app captures in the device family,
+updated connector availability, Support and connector privacy disclosures.
+iPhone remains labelled coming soon.
 
-- `index.html` - home and app overview
-- `support.html` - support contact details, FAQ, and bug-report guidance
-- `privacy.html` - privacy policy page
-- `404.html` - fallback page for missing routes on GitHub Pages
-- `styles.css` - shared site styling
-- `script.js` - small progressive-enhancement script for reveal animations and the footer year
-- `assets/brand/` - Shelf-ish logo and app icon
-- `assets/images/` - branded screenshot placeholder SVGs
-- `site.webmanifest` - install metadata and icon references
-- `.nojekyll` - tells GitHub Pages to serve the site as plain static files
+Support, feedback and privacy contact: shelfishapp@gmail.com.
 
-## Publishing checks
+Original full-desktop captures, unused artwork experiments, local browser state
+and development notes are not part of this publication. Active app captures
+are exported losslessly. Apple device artwork is used in the app UI mock-ups;
+Apple and other product marks belong to their respective owners.
 
-1. Use `shelfishapp@gmail.com` for Shelf-ish support and privacy enquiries. Do not publish an employer email address.
-2. Confirm the Mac App Store link resolves to the current Shelf-ish listing.
-3. Keep unreleased platform claims out of the live site.
-4. Update `privacy.html` whenever the app’s data handling or permissions change.
+Run `python3 -m http.server 8765 --bind 127.0.0.1` here for a local preview.
 
-## GitHub Pages
-
-1. Create a new repository for the site.
-2. Copy the contents of this folder into the repository root.
-3. Push to GitHub.
-4. In the repository settings, enable GitHub Pages from the `main` branch root.
-5. Leave `.nojekyll` in place so GitHub Pages serves the files exactly as-is.
-
-All links in the site are relative, so it should work on a standard GitHub Pages project site without further path changes.
-
-## Brand assets
-
-The 29 October 2026 website assets use the approved overlapping rainbow-card
-identity from the Shelfish app checkout. Header artwork uses ShelfLogoCompact
-(the muted transparent in-app symbol); favicons, installed-site icons, touch
-icons and social metadata use the app icon. Regenerate the master identity in
-the app repository before copying updated exports here. Asset URLs are versioned
-so browsers can replace the previous shelf mark.
+Apple template artwork remains subject to the bundled
+[Apple Design Resources licence](LICENSE-APPLE-DESIGN-RESOURCES.rtf), including
+its restrictions on extraction and reuse.

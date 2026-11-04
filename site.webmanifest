@@ -1,7 +1,7 @@
 {
   "name": "Shelf-ish",
   "short_name": "Shelf-ish",
-  "description": "A tidy shelf for temporary clips.",
+  "description": "A private shelf for useful clips and their context.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fbfcff",

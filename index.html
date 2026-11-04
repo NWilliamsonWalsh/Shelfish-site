@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shelf-ish | A tidy shelf for temporary clips</title>
+    <title>Shelf-ish | Your clipboard, more shelf-ish</title>
     <meta
       name="description"
-      content="Shelf-ish keeps text, links, files, screenshots, code, audio, and more tidy on your Mac."
+      content="A private shelf for what you copy. Keep useful clips and their context together on your Mac, with optional on-device intelligence. No subscription."
     >
     <meta name="theme-color" content="#fbfcff">
     <link rel="canonical" href="https://shelfishclipboard.com/">
-    <meta property="og:title" content="Shelf-ish | A tidy shelf for temporary clips">
+    <meta property="og:title" content="Shelf-ish | Your clipboard, more shelf-ish">
     <meta
       property="og:description"
-      content="Shelf-ish keeps text, links, files, screenshots, code, audio, and more tidy on your Mac."
+      content="A private shelf for what you copy. Keep useful clips and their context together on your Mac, with optional on-device intelligence. No subscription."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://shelfishclipboard.com/">
@@ -22,10 +22,10 @@
       content="https://shelfishclipboard.com/assets/brand/app-icon.png?v=20261029"
     >
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Shelf-ish | A tidy shelf for temporary clips">
+    <meta name="twitter:title" content="Shelf-ish | Your clipboard, more shelf-ish">
     <meta
       name="twitter:description"
-      content="Shelf-ish keeps text, links, files, screenshots, code, audio, and more tidy on your Mac."
+      content="A private shelf for what you copy. Keep useful clips and their context together on your Mac, with optional on-device intelligence. No subscription."
     >
     <meta
       name="twitter:image"
@@ -40,22 +40,17 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css?v=20261029">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261104-connector-privacy">
+    <script src="script.js?v=20261104-cards-context" defer></script>
   </head>
-  <body>
+  <body class="home">
     <a class="skip-link" href="#content">Skip to content</a>
     <div class="page-shell">
       <header class="site-header">
         <div class="container site-header__inner">
-          <a class="brand" href="index.html" aria-label="Shelf-ish home page">
-            <img class="brand__mark" src="assets/brand/shelf-logo.png?v=20261029" alt="">
-            <span class="brand__name">Shelf-ish</span>
-          </a>
+          <a class="brand" href="index.html" aria-label="Shelf-ish home page"><img class="brand__mark" src="assets/brand/shelf-logo.png?v=20261029" width="48" height="48" alt=""><span class="brand__name">Shelf-ish</span></a>
           <nav class="site-nav" aria-label="Primary">
-            <a href="index.html" aria-current="page">Home</a>
-            <a href="support.html">Support</a>
-            <a href="privacy.html">Privacy</a>
+            <a href="#context">How it works</a><a href="#connectors">Connectors</a><a href="support.html">Support</a><a class="nav-download" href="https://apps.apple.com/gb/app/shelf-ish/id6759488585?mt=12">Get for Mac <span aria-hidden="true">↗</span></a>
           </nav>
         </div>
       </header>
@@ -64,246 +59,148 @@
         <section class="hero section">
           <div class="container hero-home__grid">
             <div class="hero-copy">
-              <span class="eyebrow">Shelf-ish for macOS</span>
-              <h1 class="display">Your clipboard, but more shelf-ish.</h1>
-              <p class="lede">
-                Save text, links, files, screenshots, code, audio, and more before they vanish into
-                clipboard oblivion. Shelf-ish keeps the useful bits close, lets the rest expire
-                quietly, and makes the whole thing feel a lot less feral.
-              </p>
-              <div class="hero__actions">
-                <a class="button button--primary" href="https://apps.apple.com/gb/app/shelf-ish/id6759488585?mt=12">
-                  View on the Mac App Store
-                </a>
-                <a class="button button--secondary" href="#screenshots">See screenshots</a>
+              <p class="kicker">A private shelf for Mac</p>
+              <h1 class="display">Your clipboard,<br><span class="gradient-text">more shelf-ish.</span></h1>
+              <p class="lede">A shelf for what you copy. A little selfish about keeping the useful context, too.</p>
+              <div class="hero__actions"><a class="button button--primary" href="https://apps.apple.com/gb/app/shelf-ish/id6759488585?mt=12">Get Shelf-ish for Mac <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#screenshots">See the shelf <span aria-hidden="true">↓</span></a></div>
+              <p class="action-note">On the Mac App Store. No subscription.<br><span>iPhone coming soon.</span></p>
+            </div>
+            <figure class="family-promo">
+              <div class="real-device-family" role="img" aria-label="Shelf-ish on Mac, with iPhone and Duo on the left, Apple Watch and Vision Pro on the right. The Mac app is available now; the wider device family previews what is on the way.">
+                <div class="real-device real-device--mac"><div class="real-device__screen real-device__screen--mac"><div class="real-device__mac-menu">Shelf-ish</div><div class="real-device__mac-app"><img src="assets/previews/mac-showcase-app.webp" width="997" height="2025" alt="Mac shelf showing photographs, text, tables and code"></div></div><img class="real-device__bezel" src="assets/devices/macbook-pro-m5-14-space-black.png" width="3860" height="2540" alt="" fetchpriority="high"></div>
+                <div class="real-device real-device--duo"><div class="real-device__screen real-device__screen--duo"><img src="assets/previews/duo-showcase-web.webp" width="1280" height="900" alt="iPhone Duo shelf and clip preview"></div><img class="real-device__bezel" src="assets/devices/iphone-duo-night-sky-open.png" width="3093" height="2247" alt=""></div>
+                <div class="real-device real-device--iphone"><div class="real-device__screen real-device__screen--iphone"><img src="assets/previews/iphone-showcase-web.webp" width="1206" height="2622" alt="iPhone shelf"></div><img class="real-device__bezel" src="assets/devices/iphone-18-pro-black.png" width="1350" height="2760" alt=""></div>
+                <div class="real-device--vision"><img src="assets/devices/apple-vision-pro-cutout.svg" width="560" height="305" alt="Apple Vision Pro"></div>
+                <div class="real-device real-device--watch"><div class="real-device__screen real-device__screen--watch"><img src="assets/previews/watch-showcase-web.webp" width="1509" height="1800" alt="Apple Watch recent clips"></div><img class="real-device__bezel" src="assets/devices/apple-watch-series-11-46-black.png" width="560" height="880" alt=""></div>
               </div>
-              <p class="action-note">
-                Available now for macOS. No subscription and no creepy tracking.
-              </p>
-
-            </div>
-
-            <div class="hero-visual reveal">
-              <img
-                class="hero-mockup"
-                src="assets/figma/mac-mockup-tight.png"
-                width="1545"
-                height="934"
-                alt="Shelf-ish running on a Mac with a colourful grid of saved clips."
-              >
-            </div>
-
-            <section class="hero-highlights" aria-label="Key features">
-              <article class="hero-highlight">
-                <strong>Capture without breaking stride</strong>
-                <p>Quick save, clipboard import, previews, and pinning for the thing you needed five seconds ago.</p>
-              </article>
-              <article class="hero-highlight">
-                <strong>Search by what you remember</strong>
-                <p>Find clips by content, source app, type, tag, or date instead of trying to reconstruct history from vibes.</p>
-              </article>
-              <article class="hero-highlight">
-                <strong>Cards that match the content</strong>
-                <p>Text looks like text, code looks like code, and screenshots stop pretending to be generic beige rectangles.</p>
-              </article>
-              <article class="hero-highlight">
-                <strong>Private by default</strong>
-                <p>Local-first, no analytics theatre, and expiry rules that keep sensitive clutter from becoming permanent decor.</p>
-              </article>
-            </section>
+              <figcaption>Made for Mac. More of the Apple family on the way.</figcaption>
+            </figure>
           </div>
         </section>
 
-        <section class="section">
+        <section class="section shelf-showcase" id="screenshots" aria-labelledby="shelf-heading">
           <div class="container">
-            <div class="section-heading section-heading--split section-heading--editorial reveal">
-              <div>
-                <span class="label">Why it works</span>
-                <h2>Save it now, sort it later, find it before it becomes folklore.</h2>
+            <div class="section-heading section-heading--split"><div><p class="kicker">The shelf</p><h2 id="shelf-heading">Your useful bits.<br>Together.</h2></div><p class="muted">Text, photos, links, tables, code. A place for the things you’ll want back.</p></div>
+            <div class="card-lanes" data-card-lanes aria-label="Real clips in Shelf-ish">
+              <div class="card-lane" data-lane-shift="-150">
+                <div class="card-lane__track">
+                  <figure class="card-capture"><img src="assets/cards/mac-image.webp" width="466" height="341" alt="Image clip: Out of office. Mentally. A mountain lake photograph from Photos." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-text.webp" width="466" height="341" alt="Text clip: Weekend operations. A note about trains, cameras and avoiding the laundry." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-table.webp" width="466" height="341" alt="Table clip: Budget, allegedly. A small table from Excel." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-link.webp" width="466" height="341" alt="Link clip: Art. Nodding. Gift shop. A Tate Modern preview from Safari." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-code.webp" width="466" height="341" alt="Code clip: The meeting filter. A Swift snippet from Xcode." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-image.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-text.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-table.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-link.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-code.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                </div>
               </div>
-              <p class="muted">
-                Shelf-ish is designed for information that matters briefly but still matters. It keeps
-                the flow fast, the shelf legible, and your desktop from quietly becoming a museum of temporary rubbish.
-              </p>
+              <div class="card-lane" data-lane-shift="120">
+                <div class="card-lane__track">
+                  <figure class="card-capture"><img src="assets/cards/mac-audio.webp" width="466" height="341" alt="Audio clip: Voice memo, not a podcast. An audio note with its transcript." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-email.webp" width="466" height="341" alt="Pinned text clip: Following up, politely. Saved from Mail." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-location.webp" width="466" height="341" alt="Location clip: Tate Modern, Bankside. An Apple Maps preview." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-image.webp" width="466" height="341" alt="Image clip: Out of office. Mentally. A mountain lake photograph from Photos." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-table.webp" width="466" height="341" alt="Table clip: Budget, allegedly. A small table from Excel." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-audio.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-email.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-location.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-image.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-table.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                </div>
+              </div>
+              <div class="card-lane" data-lane-shift="-110">
+                <div class="card-lane__track">
+                  <figure class="card-capture"><img src="assets/cards/mac-code.webp" width="466" height="341" alt="Code clip: The meeting filter. A Swift snippet from Xcode." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-link.webp" width="466" height="341" alt="Link clip: Art. Nodding. Gift shop. A Tate Modern preview from Safari." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-text.webp" width="466" height="341" alt="Text clip: Weekend operations. A note about trains, cameras and avoiding the laundry." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-email.webp" width="466" height="341" alt="Pinned text clip: Following up, politely. Saved from Mail." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture"><img src="assets/cards/mac-location.webp" width="466" height="341" alt="Location clip: Tate Modern, Bankside. An Apple Maps preview." loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-code.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-link.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-text.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-email.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                  <figure class="card-capture" aria-hidden="true"><img src="assets/cards/mac-location.webp" width="466" height="341" alt="" loading="lazy" decoding="async"></figure>
+                </div>
+              </div>
             </div>
-
-            <div class="editorial-grid reveal">
-              <article class="editorial-feature">
-                <span class="editorial-feature__index">01</span>
-                <h3>Capture</h3>
-                <p>
-                  Clipboard saves, Quick Capture, and global shortcuts make it easy to grab the useful
-                  thing while you are still busy being useful.
-                </p>
-              </article>
-              <article class="editorial-feature">
-                <span class="editorial-feature__index">02</span>
-                <h3>Organise</h3>
-                <p>
-                  Type-aware cards, previews, and pinning keep links, screenshots, code, audio, and
-                  little scraps of context from collapsing into one bland pile.
-                </p>
-              </article>
-              <article class="editorial-feature">
-                <span class="editorial-feature__index">03</span>
-                <h3>Recall</h3>
-                <p>
-                  Search by content, tag, source app, type, or date, then let expiry tidy up the bits
-                  you no longer need without making a ceremony of it.
-                </p>
-              </article>
-            </div>
+            <p class="shelf-caption">Search the lot. Pin the keepers. Let the rest quietly expire.</p>
           </div>
         </section>
 
-        <section class="section" id="screenshots">
+        <section class="section context-story" id="context" aria-labelledby="context-heading">
           <div class="container">
-            <div class="section-heading section-heading--gallery reveal">
-              <span class="label">In action</span>
-              <h2><span class="gradient-text">Real cards.</span> Different shapes, different sizes, still easy to scan.</h2>
-              <p class="muted">
-                These are the actual Shelf-ish card rows from the product itself, left to be a bit
-                irregular on purpose. The page now gets out of their way and lets the interface do the talking.
-              </p>
-            </div>
+            <div class="section-heading section-heading--split"><div><p class="kicker">More than the bit you copied</p><h2 id="context-heading">Keep the clip.<br>Keep its backstory.</h2></div><p class="muted">Connect a supported app on Mac, then copy as usual. Shelf-ish can save where your selection came from and useful detail around it—so a small clip still makes sense later.</p></div>
+            <div class="context-explorer" data-context-explorer>
+              <div class="story-topline"><p>See what comes along with your copy.</p><div class="context-picker" role="group" aria-label="Choose a context example"><button type="button" data-context-choice="excel" aria-pressed="true" aria-controls="context-excel">A number</button><button type="button" data-context-choice="notes" aria-pressed="false" aria-controls="context-notes">A plan</button><button type="button" data-context-choice="web" aria-pressed="false" aria-controls="context-web">A webpage</button></div></div>
 
-            <div class="card-lanes reveal" data-card-lanes>
-              <figure class="card-lane" data-lane-shift="-220">
-                <div class="card-lane__track">
-                  <img
-                    src="assets/figma/h-card-row-1.png"
-                    width="1591"
-                    height="169"
-                    alt="A horizontal row of Shelf-ish cards showing text, password, location, and link clips in varied widths."
-                    loading="lazy"
-                  >
-                  <img
-                    src="assets/figma/h-card-row-1.png"
-                    width="1591"
-                    height="169"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  >
-                </div>
-              </figure>
+              <div class="story-example" id="context-excel" data-context-example="excel">
+                <div class="story-before"><span class="step-label">01 <span>What you copy</span></span><blockquote>£260,000</blockquote><p>One cell from a spreadsheet. You selected the number, without its row or column labels.</p><span class="story-arrow" aria-hidden="true">→</span></div>
+                <div class="story-after"><span class="step-label">02 <span>What Shelf-ish also keeps</span></span><article class="story-card story-card--excel"><header><span class="clip-type"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M3 14h18M10 4v16"/></svg>Table</span><img src="assets/connectors/excel.png" width="128" height="128" alt="Excel"></header><div class="story-card__body"><span class="clip-label">Your original clip</span><p class="clip-content">£260,000</p><div class="source-attachment"><span class="source-label">Extra context · supplied by Excel</span><strong>Sales forecast.xlsx</strong><span class="source-address">Regional forecast · cell C7</span><div class="context-table-wrap"><table class="context-table"><caption>The row and headers around your copied cell</caption><thead><tr><th scope="col">Region</th><th scope="col">Q3 forecast</th><th scope="col">Q4 forecast</th></tr></thead><tbody><tr><th scope="row">North</th><td>£240,000</td><td class="context-table__selection"><mark>£260,000</mark></td></tr></tbody></table></div><p class="context-key"><span aria-hidden="true"></span>Highlighted: the cell you copied. The labels come along as context.</p></div></div></article></div>
+                <div class="story-outcome"><span class="step-label">03 <span>When you come back to it</span></span><p>You can see that £260,000 is the <strong>North region’s Q4 forecast</strong>, and which workbook it came from. A number, with a fighting chance of being useful.</p></div>
+              </div>
 
-              <figure class="card-lane" data-lane-shift="180">
-                <div class="card-lane__track">
-                  <img
-                    src="assets/figma/h-card-row-2.png"
-                    width="1591"
-                    height="173"
-                    alt="A horizontal row of Shelf-ish cards including phone number, audio, map, text, and code clips."
-                    loading="lazy"
-                  >
-                  <img
-                    src="assets/figma/h-card-row-2.png"
-                    width="1591"
-                    height="173"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  >
-                </div>
-              </figure>
+              <div class="story-example" id="context-notes" data-context-example="notes" hidden>
+                <div class="story-before"><span class="step-label">01 <span>What you copy</span></span><blockquote>10:30</blockquote><p>A time from an Obsidian note. Very precise. Until you forget where you’re meant to be.</p><span class="story-arrow" aria-hidden="true">→</span></div>
+                <div class="story-after"><span class="step-label">02 <span>What Shelf-ish also keeps</span></span><article class="story-card story-card--notes"><header><span class="clip-type"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 12h6m-6 4h6"/></svg>Text</span><img src="assets/connectors/obsidian.png" width="128" height="128" alt="Obsidian"></header><div class="story-card__body"><span class="clip-label">Your original clip</span><p class="clip-content">10:30</p><div class="source-attachment"><span class="source-label">Extra context · nearby note text</span><strong>Saturday walk</strong><span class="source-address">Weekend plans · note link · lines 1–3</span><blockquote class="context-excerpt">Hampstead Heath on Saturday.<br>Meet at Gospel Oak station at <mark>10:30</mark>.<br>Bring the camera. Leave the inbox at home.</blockquote><p class="context-key"><span aria-hidden="true"></span>You copied the time. The note and nearby passage stay attached.</p></div></div></article></div>
+                <div class="story-outcome"><span class="step-label">03 <span>When you come back to it</span></span><p>It’s <strong>10:30 at Gospel Oak for the Hampstead Heath walk</strong>. You have the plan around the time, plus a way back to the original note.</p></div>
+              </div>
 
-              <figure class="card-lane" data-lane-shift="-160">
-                <div class="card-lane__track">
-                  <img
-                    src="assets/figma/h-card-row-3.png"
-                    width="1591"
-                    height="169"
-                    alt="A horizontal row of Shelf-ish cards with screenshots, code, and colourful mixed clip previews."
-                    loading="lazy"
-                  >
-                  <img
-                    src="assets/figma/h-card-row-3.png"
-                    width="1591"
-                    height="169"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  >
-                </div>
-              </figure>
-            </div>
-
-            <div class="gallery-notes reveal">
-              <article class="gallery-note">
-                <strong>Type-aware cards</strong>
-                <p>Links, screenshots, audio, passwords, phone numbers, maps, and code all have distinct layouts so you can scan instead of squint.</p>
-              </article>
-              <article class="gallery-note">
-                <strong>Rich previews</strong>
-                <p>The shelf keeps the useful context attached, whether that is an image, a code block, a transcript snippet, or a location preview.</p>
-              </article>
-              <article class="gallery-note">
-                <strong>Intentional clutter</strong>
-                <p>The cards are varied because real saved things are varied. The job of the product is to make that mess feel readable, not sterile.</p>
-              </article>
+              <div class="story-example" id="context-web" data-context-example="web" hidden>
+                <div class="story-before"><span class="step-label">01 <span>What you copy</span></span><blockquote>SE1 9TG</blockquote><p>A postcode from a webpage. Handy for directions. Less handy when you’ve forgotten the destination.</p><span class="story-arrow" aria-hidden="true">→</span></div>
+                <div class="story-after"><span class="step-label">02 <span>What Shelf-ish also keeps</span></span><article class="story-card story-card--web"><header><span class="clip-type"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 12h6m-6 4h6"/></svg>Text</span><img src="assets/connectors/safari.png" width="128" height="128" alt="Safari"></header><div class="story-card__body"><span class="clip-label">Your original clip</span><p class="clip-content">SE1 9TG</p><div class="source-attachment"><span class="source-label">Extra context · page and surrounding text</span><strong>Visit Tate Modern</strong><span class="source-address">tate.org.uk/visit/tate-modern</span><blockquote class="context-excerpt">Tate Modern<br>Bankside, London <mark>SE1 9TG</mark></blockquote><p class="context-key"><span aria-hidden="true"></span>You copied the postcode. The page title, link and nearby text explain it.</p></div><a class="story-reuse" href="https://www.tate.org.uk/visit/tate-modern">Open the visitor page <span aria-hidden="true">↗</span></a></div></article></div>
+                <div class="story-outcome"><span class="step-label">03 <span>When you come back to it</span></span><p>You know it’s <strong>Tate Modern’s postcode</strong>, and can reopen the visitor page for the rest of the details. One less mystery in your clipboard.</p></div>
+              </div>
+              <p class="story-disclosure">Illustrative examples. You choose which sources add context and whether to include nearby text. Extra details, including Excel labels, depend on what the source provides. Your original copy and formatting stay intact.</p>
             </div>
           </div>
         </section>
 
-        <section class="section">
-          <div class="container">
-            <div class="split-grid split-grid--cta">
-              <article class="callout reveal">
-                <span class="label">Support</span>
-                <h2>Need a hand?</h2>
-                <p>
-                  Bug reports, setup questions, and the occasional “why is my clipboard doing that”
-                  all have a proper home.
-                </p>
-                <div class="cta-row">
-                  <a class="button button--secondary" href="support.html">Visit Support</a>
-                </div>
-              </article>
+        <section class="section reuse-section" id="features" aria-labelledby="reuse-heading">
+          <div class="container reuse-layout"><div><p class="kicker">Put it back to work</p><h2 id="reuse-heading">Find it. Paste it.<br>Carry on.</h2><p class="muted">Less hunting through yesterday’s tabs. More getting on with today.</p></div><div class="reuse-grid">
+            <article><span class="workflow-symbol" aria-hidden="true">⌘⇧V</span><h3>Quick Paste</h3><p>Search your shelf, press Space to peek, then paste the original or plain text.</p></article>
+            <article><span class="workflow-symbol" aria-hidden="true">{{…}}</span><h3>Reusable snippets</h3><p>Give frequently used text a keyword. Your best polite follow-up, on tap.</p></article>
+            <article><span class="workflow-symbol" aria-hidden="true">✓</span><h3>Apple Reminders</h3><p>Send a clip or selection to Reminders when it needs a nudge. Requires access.</p></article>
+            <article><span class="workflow-symbol" aria-hidden="true">Aa</span><h3>Words from anywhere</h3><p>Extract text from pictures, or record an audio note with a transcript.</p></article>
+          </div></div>
+        </section>
 
-              <article class="callout reveal">
-                <span class="label">Privacy</span>
-                <h2>Prefer the plain-English version?</h2>
-                <p>
-                  The privacy page explains what Shelf-ish stores, what it does not collect, and where
-                  network activity is used only when needed.
-                </p>
-                <div class="cta-row">
-                  <a class="button button--secondary" href="privacy.html">Read Privacy Policy</a>
-                </div>
-              </article>
+        <section class="section connector-section" id="connectors" aria-labelledby="connector-heading">
+          <div class="container"><div class="section-heading section-heading--split"><div><p class="kicker">Connectors</p><h2 id="connector-heading">More context.<br>Same old <kbd>⌘C</kbd>.</h2></div><p class="muted">Connect a source once, then copy as usual. You choose which sources—and how much context—come along.</p></div>
+            <div class="connector-grid">
+              <article class="connector-card"><div class="connector-card__heading"><img class="connector-icon" src="assets/connectors/safari.png" width="128" height="128" alt="" loading="lazy" decoding="async"><h3>Safari</h3><span class="connector-status">Out now</span></div><p>Keep a page’s title, original link and optional surrounding passage.</p><a class="connector-setup" href="support.html#connect-safari">Set up Safari <span aria-hidden="true">↗</span></a></article>
+              <article class="connector-card"><div class="connector-card__heading"><img class="connector-icon" src="assets/connectors/excel.png" width="128" height="128" alt="" loading="lazy" decoding="async"><h3>Excel</h3><span class="connector-status">Out now</span></div><p>Give copied cells their workbook, sheet, range and available labels.</p><a class="connector-setup" href="support.html#connect-excel">Set up Excel <span aria-hidden="true">↗</span></a></article>
+              <article class="connector-card"><div class="connector-card__heading"><img class="connector-icon" src="assets/connectors/obsidian.png" width="128" height="128" alt="" loading="lazy" decoding="async"><h3>Obsidian</h3><span class="connector-status">Out now</span></div><p>Keep a passage connected to its note and neighbouring text.</p><a class="connector-setup" href="support.html#connect-obsidian">Set up Obsidian <span aria-hidden="true">↗</span></a></article>
+              <article class="connector-card"><div class="connector-card__heading"><img class="connector-icon" src="assets/connectors/vscode.png" width="128" height="128" alt="" loading="lazy" decoding="async"><h3>VS Code</h3><span class="connector-status">Out now</span></div><p>Save selected code with its file, line range and useful surrounding detail.</p><a class="connector-setup" href="support.html#connect-vscode">Set up VS Code <span aria-hidden="true">↗</span></a></article>
             </div>
+            <div class="connector-upcoming" aria-label="Upcoming connectors"><p class="upcoming-label">A little more on the way</p><div class="upcoming-app"><img src="assets/connectors/chrome.png" width="128" height="128" alt="" loading="lazy"><strong>Chrome</strong><span class="connector-status connector-status--development">Coming soon...</span></div><div class="upcoming-app"><img src="assets/connectors/slack.png" width="128" height="128" alt="" loading="lazy"><strong>Slack</strong><span class="connector-status connector-status--development">Coming soon...</span></div></div>
+            <p class="section-footnote">Word and PowerPoint are planned. Slack is being explored as public-channel discussion lookup; a search match is not proof of a copied message’s source.</p>
           </div>
         </section>
+
+        <section class="section intelligence-section" id="intelligence" aria-labelledby="intelligence-heading">
+          <div class="container intelligence-layout"><div class="intelligence-copy"><p class="kicker">Optional Apple Intelligence</p><h2 id="intelligence-heading">A little help,<br>right on your Mac.</h2><p class="muted">Summarise a long clip, pull out action items or get a second opinion on code. Shelf-ish’s language tools use Apple’s on-device model.</p><a class="quiet-link" href="privacy.html">How your content stays private <span aria-hidden="true">↗</span></a></div>
+            <figure class="intelligence-example"><div class="intelligence-original"><span class="source-label">A saved clip · Weekend operations</span><p>Book the train. Charge the camera. Ignore the laundry until it becomes an art installation.</p></div><div class="intelligence-result"><span class="source-label"><span aria-hidden="true">✦</span> A shorter version</span><p>Book the train and charge the camera for the weekend.</p></div><figcaption>Illustrative summary. Review generated results before using them.</figcaption></figure>
+            <p class="intelligence-requirements">Requires a supported Mac, Apple Intelligence enabled, downloaded models and a supported language and region. Ordinary capture and paste work without it.</p>
+          </div>
+        </section>
+
+        <section class="section privacy-section" id="your-rules" aria-labelledby="rules-heading">
+          <div class="container privacy-layout"><div><p class="kicker">Your shelf. Your rules.</p><h2 id="rules-heading">A little selfish.<br>Still very private.</h2><a class="quiet-link" href="privacy.html">Privacy, in plain English <span aria-hidden="true">↗</span></a></div><ul class="privacy-promises"><li><strong>You choose what comes in.</strong><span>Pause capture, save manually, exclude apps and enable context sources individually.</span></li><li><strong>You choose what stays.</strong><span>Pin the keepers. Set expiry for temporary clips.</span></li><li><strong>Your clips live on your devices.</strong><span>Optional sync through your own iCloud account. No advertising or app analytics.</span></li></ul></div>
+        </section>
+
+        <section class="section faq" id="questions" aria-labelledby="questions-heading"><div class="container faq-layout"><div><p class="kicker">A few useful answers</p><h2 id="questions-heading">Before you<br>make room.</h2></div><div class="faq-items">
+          <details class="faq-item"><summary>Which connectors can I use now?</summary><p>Safari, Excel, Obsidian and VS Code context are out now for Mac. Chrome and Slack are coming soon. <a class="text-link" href="#connectors">See the connector setup guides.</a></p></details>
+          <details class="faq-item"><summary>Does it collect everything I look at?</summary><p>No. Context capture is tied to eligible copies from sources you enable, with the required permissions. Optional surrounding text is bounded. You can pause capture or disable a source.</p></details>
+          <details class="faq-item"><summary>Do I need Apple Intelligence?</summary><p>No. Save, search, pin and paste without it. Optional language tools need a compatible Mac with Apple Intelligence enabled and its models ready.</p></details>
+          <details class="faq-item"><summary>What about the other devices?</summary><p>The Mac app is available now. iPhone is coming soon. The Duo, Watch and Vision Pro artwork previews wider-platform work; it does not mean every version is available to download yet.</p></details>
+          <details class="faq-item"><summary>Is there a subscription?</summary><p>No subscription. The Mac App Store listing has the current price, requirements and release details.</p></details>
+        </div></div></section>
+
+        <section class="section download-section"><div class="container final-cta"><img src="assets/brand/shelf-logo.png?v=20261029" width="60" height="60" alt=""><h2>Make a little room.</h2><p>For the bits you’ll be glad you kept.</p><a class="button button--primary" href="https://apps.apple.com/gb/app/shelf-ish/id6759488585?mt=12">Get Shelf-ish for Mac <span aria-hidden="true">↗</span></a><span class="download-note">On the Mac App Store. No subscription.</span></div></section>
       </main>
-
-      <footer class="site-footer">
-        <div class="container site-footer__inner">
-          <div class="footer-grid">
-            <section class="footer-card">
-              <h3>Shelf-ish</h3>
-              <p>A tidy shelf for temporary clips on your Mac.</p>
-            </section>
-            <section class="footer-card">
-              <h3>Support</h3>
-              <p><a class="text-link" href="mailto:shelfishapp@gmail.com">shelfishapp@gmail.com</a></p>
-            </section>
-            <section class="footer-card">
-              <h3>Privacy</h3>
-              <p>Local-first, no analytics, and plain English about what the app does.</p>
-            </section>
-          </div>
-
-          <div class="footer-bar">
-            <div>© <span data-year>2026</span> Shelf-ish. All rights reserved.</div>
-            <nav class="footer-nav" aria-label="Footer">
-              <a href="index.html">Home</a>
-              <a href="support.html">Support</a>
-              <a href="privacy.html">Privacy</a>
-            </nav>
-          </div>
-        </div>
-      </footer>
+      <footer class="site-footer home-footer"><div class="container"><div><strong>Shelf-ish</strong><span>© <span data-year>2026</span></span></div><nav aria-label="Footer"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="mailto:shelfishapp@gmail.com">shelfishapp@gmail.com</a></nav></div></footer>
     </div>
   </body>
 </html>

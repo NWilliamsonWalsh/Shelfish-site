@@ -40,188 +40,140 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css?v=20261029">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261104-connector-privacy">
+    <script src="script.js?v=20261104-cards-context" defer></script>
+    <script src="support.js?v=20261104-connectors" defer></script>
   </head>
-  <body>
+  <body class="information-page support-page">
     <a class="skip-link" href="#content">Skip to content</a>
     <div class="page-shell">
       <header class="site-header">
         <div class="container site-header__inner">
-          <a class="brand" href="index.html" aria-label="Shelf-ish home page">
-            <img class="brand__mark" src="assets/brand/shelf-logo.png?v=20261029" alt="">
-            <span class="brand__name">Shelf-ish</span>
-          </a>
+          <a class="brand" href="index.html" aria-label="Shelf-ish home page"><img class="brand__mark" src="assets/brand/shelf-logo.png?v=20261029" width="48" height="48" alt=""><span class="brand__name">Shelf-ish</span></a>
           <nav class="site-nav" aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="support.html" aria-current="page">Support</a>
-            <a href="privacy.html">Privacy</a>
+            <a href="index.html#context">How it works</a><a href="index.html#connectors">Connectors</a><a href="support.html" aria-current="page">Support</a><a class="nav-download" href="https://apps.apple.com/gb/app/shelf-ish/id6759488585?mt=12">Get for Mac <span aria-hidden="true">↗</span></a>
           </nav>
         </div>
       </header>
 
       <main class="main" id="content">
-        <section class="page-title">
-          <div class="container">
-            <span class="eyebrow">Support</span>
-            <h1 class="display display--small">Help for the useful bits that have gone slightly sideways.</h1>
-            <p class="lede">
-              If Shelf-ish is misbehaving, we would like to hear about it. If you simply need a hand,
-              that is welcome too.
-            </p>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container support-grid">
-            <article class="contact-card reveal">
-              <div class="contact-card__icon contact-card__icon--mail" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M4.5 7.5h15a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 15V9a1.5 1.5 0 0 1 1.5-1.5Z" />
-                  <path d="m4 8 8 6 8-6" />
-                </svg>
-              </div>
-              <h3>Support email</h3>
-              <p>
-                Reach us at <a class="text-link" href="mailto:shelfishapp@gmail.com">shelfishapp@gmail.com</a>
-                for help with bugs, unexpected behaviour, or questions about Shelf-ish.
-              </p>
-            </article>
-
-            <article class="contact-card reveal">
-              <div class="contact-card__icon contact-card__icon--time" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <circle cx="12" cy="12" r="8.5" />
-                  <path d="M12 7.5V12l3 2" />
-                </svg>
-              </div>
-              <h3>Before getting in touch</h3>
-              <p>
-                Keep a note of your app version and the steps that led to the issue.
-                Please avoid including private clipboard content in screenshots.
-              </p>
-            </article>
-
-            <article class="contact-card reveal">
-              <div class="contact-card__icon contact-card__icon--bug" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M9 6.5a3 3 0 0 1 6 0" />
-                  <path d="M8 9.5h8v4.75A3.75 3.75 0 0 1 12.25 18h-.5A3.75 3.75 0 0 1 8 14.25V9.5Z" />
-                  <path d="M6.5 10.5h-2m2.5 3.5H4.5m12.5-3.5h2m-2 3.5h2.5M8.5 7.5 7 6m8.5 1.5L17 6" />
-                </svg>
-              </div>
-              <h3>Best way to report a bug</h3>
-              <p>
-                Send a short description of what happened, what you expected instead, and the steps
-                that led up to it. Screenshots are welcome. Computers can be strangely coy witnesses.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container split-grid">
-            <article class="callout reveal">
-              <h2>What to include in a support request</h2>
-              <ul class="plain-list muted">
-                <li>Your Mac model and macOS version.</li>
-                <li>Your Shelf-ish version and build number.</li>
-                <li>A brief description of what you expected to happen.</li>
-                <li>What actually happened instead, including any error message.</li>
-                <li>Whether the issue happens every time or only occasionally.</li>
-                <li>A screenshot or screen recording if it helps explain the issue clearly.</li>
-              </ul>
-            </article>
-
-            <article class="callout reveal">
-              <h2>How to report a bug</h2>
-              <p>
-                Email <a class="text-link" href="mailto:shelfishapp@gmail.com">shelfishapp@gmail.com</a>
-                with a short description of the problem. If it involves a specific
-                clip type, mention whether it was text, a link, code, audio, a screenshot, or
-                something else.
-              </p>
-              <p class="note">
-                If the app appears to be syncing incorrectly, include which devices were involved and
-                whether iCloud sync was enabled.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section faq">
-          <div class="container">
-            <div class="section-heading reveal">
-              <h2>Frequently asked questions</h2>
-              <p class="faq-intro">
-                Clear answers to the questions people usually ask first.
-              </p>
+        <section class="information-hero">
+          <div class="container support-intro">
+            <div>
+              <p class="kicker">Shelf-ish support</p>
+              <h1 class="display">Need a hand?</h1>
+              <p class="lede">Get your apps connected, find a quick answer or tell us what’s gone wrong. Let’s get your shelf in order.</p>
+              <nav class="page-shortcuts" aria-label="Support topics">
+                <a href="#getting-started">Getting started <span aria-hidden="true">↓</span></a>
+                <a href="#connector-setup">Connectors <span aria-hidden="true">↓</span></a>
+                <a href="#answers">Quick answers <span aria-hidden="true">↓</span></a>
+              </nav>
             </div>
+            <aside class="support-contact" aria-labelledby="contact-heading">
+              <div class="support-contact__banner"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg><span>Get in touch</span></div>
+              <div class="support-contact__body">
+                <h2 id="contact-heading">A question? A good idea?<br>Something being awkward?</h2>
+                <a class="support-email" href="mailto:shelfishapp@gmail.com">shelfishapp@gmail.com <span aria-hidden="true">↗</span></a>
+                <p>For help, feedback and feature ideas.</p>
+                <a class="quiet-link" href="#report-a-problem">Reporting a problem? Here’s what helps <span aria-hidden="true">↓</span></a>
+              </div>
+            </aside>
+          </div>
+        </section>
 
-            <div class="faq-items">
-              <details class="faq-item reveal">
-                <summary>What platforms does Shelf-ish support?</summary>
-                <p>
-                  Shelf-ish is currently available for macOS, including its supporting widgets.
-                </p>
-              </details>
+        <section class="information-section" id="getting-started" aria-labelledby="getting-started-heading">
+          <div class="container help-layout">
+            <div class="help-heading"><p class="kicker">A good place to start</p><h2 id="getting-started-heading">From copy<br>to keeper.</h2><p>A few useful habits for your Mac.</p></div>
+            <ol class="getting-started-steps">
+              <li><span class="step-number" aria-hidden="true">01</span><div><h3>Copy as usual.</h3><p>Enable automatic capture in Settings → Capture, then use <kbd>⌘C</kbd> in your apps. You can pause capture, exclude apps or save manually instead.</p></div></li>
+              <li><span class="step-number" aria-hidden="true">02</span><div><h3>Find it on your shelf.</h3><p>Open Shelf-ish from the menu bar. Search for a clip, open its preview or copy it to use again. Quick Paste gives you another way to search and paste.</p></div></li>
+              <li><span class="step-number" aria-hidden="true">03</span><div><h3>Pin the keepers.</h3><p>Pin what you want to keep. Unpinned clips can expire on your schedule, leaving a little more room for the next useful thing.</p></div></li>
+            </ol>
+          </div>
+        </section>
 
-              <details class="faq-item reveal">
-                <summary>Does Shelf-ish sync across devices?</summary>
-                <p>
-                  Shelf-ish can use CloudKit when it is available, with local storage as a fallback
-                  when it is not. That means it still works on a single device even if sync is not active.
-                </p>
-              </details>
-
-              <details class="faq-item reveal">
-                <summary>Does the app watch my clipboard all the time?</summary>
-                <p>
-                  On supported platforms, live capture is optional. Users can pause capture, exclude
-                  certain apps, or use manual save actions instead.
-                </p>
-              </details>
-
-              <details class="faq-item reveal">
-                <summary>How do expiring clips work?</summary>
-                <p>
-                  Unpinned clips can expire automatically after a set time, which helps keep the shelf
-                  tidy. Important clips can be pinned or snoozed so they stick around longer.
-                </p>
-              </details>
-
-              <details class="faq-item reveal">
-                <summary>Why is a preview or transcript missing?</summary>
-                <p>
-                  Some features depend on network access, Mac capabilities, or optional model
-                  downloads. If a preview does not load, check your connectivity and then try again.
-                </p>
-              </details>
-
-              <details class="faq-item reveal">
-                <summary>What should I do if the app feels slow or stuck?</summary>
-                <p>
-                  Restart the app, check your operating system version, and confirm whether the issue
-                  happens with one clip or every clip. If it persists, send the steps to reproduce it.
-                </p>
-              </details>
+        <section class="information-section connector-help" id="connector-setup" aria-labelledby="connector-help-heading">
+          <div class="container help-layout">
+            <div class="help-heading"><p class="kicker">Keep the backstory</p><h2 id="connector-help-heading">Connect once.<br>Copy as usual.</h2><p>Start in Settings → Connectors on your Mac. Choose a source to see its setup steps.</p><a class="quiet-link" href="index.html#context">See what context adds <span aria-hidden="true">↗</span></a></div>
+            <div>
+              <div class="connector-guides" data-connector-setup>
+                <details class="connector-guide" id="connect-safari">
+                  <summary><img src="assets/connectors/safari.png" width="44" height="44" alt=""><span class="connector-guide__label"><strong>Safari</strong><span>Page title, link and optional nearby text</span></span><span class="guide-status">Out now</span></summary>
+                  <div class="connector-guide__body">
+                    <ol class="setup-steps">
+                      <li>In Shelf-ish’s Connectors settings, switch on Safari and choose <strong>Open Safari Extensions</strong>.</li>
+                      <li>Enable Shelf-ish in Safari, accept its capture disclosure and choose the website access you want to allow.</li>
+                      <li>Copy selected webpage text as usual with <kbd>⌘C</kbd>. With capture enabled, the saved clip can keep its page title, source link and optional surrounding text.</li>
+                    </ol>
+                    <p>Safari manages website permissions. You can pause capture or change your surrounding-text choice in the extension.</p>
+                  </div>
+                </details>
+                <details class="connector-guide" id="connect-excel">
+                  <summary><img src="assets/connectors/excel.png" width="44" height="44" alt=""><span class="connector-guide__label"><strong>Excel</strong><span>Workbook, sheet, range and available labels</span></span><span class="guide-status">Out now</span></summary>
+                  <div class="connector-guide__body">
+                    <ol class="setup-steps">
+                      <li>Keep automatic clipboard capture enabled in Shelf-ish → Settings → Capture.</li>
+                      <li>In Settings → Connectors, switch on Excel. No add-in or separate connection is needed.</li>
+                      <li>Copy a continuous range of cells with <kbd>⌘C</kbd>. Open the saved clip to see the workbook, sheet and range details supplied by Excel.</li>
+                    </ol>
+                    <p>Headers and row context depend on the data Excel provides. Source links are included only when available; missing metadata is not guessed.</p>
+                  </div>
+                </details>
+                <details class="connector-guide" id="connect-obsidian">
+                  <summary><img src="assets/connectors/obsidian.png" width="44" height="44" alt=""><span class="connector-guide__label"><strong>Obsidian</strong><span>Note link, line range and nearby passage</span></span><span class="guide-status">Out now</span></summary>
+                  <div class="connector-guide__body">
+                    <ol class="setup-steps">
+                      <li>Enable the Shelf-ish plug-in in Obsidian and switch on Obsidian in Shelf-ish → Settings → Connectors.</li>
+                      <li>Choose <strong>Shelf-ish · Connect</strong> in Obsidian’s status bar, then approve the connection in Shelf-ish once.</li>
+                      <li>Select text in a saved Markdown note and copy with <kbd>⌘C</kbd>. If you have just approved the connection, copy the selection again.</li>
+                    </ol>
+                    <p>Keep Shelf-ish’s automatic capture enabled. The clip can retain its note link, line range and a bounded nearby passage.</p>
+                  </div>
+                </details>
+                <details class="connector-guide" id="connect-vscode">
+                  <summary><img src="assets/connectors/vscode.png" width="44" height="44" alt=""><span class="connector-guide__label"><strong>VS Code</strong><span>File, line range and surrounding code</span></span><span class="guide-status">Out now</span></summary>
+                  <div class="connector-guide__body">
+                    <ol class="setup-steps">
+                      <li>Enable the Shelf-ish extension in VS Code and switch on Visual Studio Code in Shelf-ish → Settings → Connectors.</li>
+                      <li>Click <strong>Shelf-ish: Connect</strong> in VS Code’s status bar and approve the connection in Shelf-ish once.</li>
+                      <li>Select code in a local file editor and copy with <kbd>⌘C</kbd>. If you have just approved the connection, copy the selection again.</li>
+                    </ol>
+                    <p>Keep automatic capture enabled. Context capture applies to selected text in local file editors; other views keep their existing copy behaviour.</p>
+                  </div>
+                </details>
+              </div>
+              <div class="help-upcoming" aria-label="Upcoming connectors"><span>Coming soon...</span><span><img src="assets/connectors/chrome.png" width="24" height="24" alt=""> Chrome</span><span><img src="assets/connectors/slack.png" width="24" height="24" alt=""> Slack</span></div>
+              <p class="help-note">Setup can vary by app version. Check Settings → Connectors for the controls available in your installed version.</p>
             </div>
+          </div>
+        </section>
+
+        <section class="information-section" id="answers" aria-labelledby="answers-heading">
+          <div class="container help-layout">
+            <div class="help-heading"><p class="kicker">Quick answers</p><h2 id="answers-heading">A little<br>less head-scratching.</h2><p>Capture, context, sync and the other useful details.</p></div>
+            <div class="help-answers">
+              <details class="faq-item"><summary>Which devices can I use now?</summary><p>The Mac app is available now, including its supporting widgets. iPhone is coming soon. The Duo, Watch and Vision Pro artwork previews wider-platform work; it does not mean every version is available to download yet.</p></details>
+              <details class="faq-item"><summary>Does the app watch my clipboard all the time?</summary><p>On Mac, automatic clipboard capture is optional. You can pause capture, exclude apps or save manually instead. The forthcoming iPhone app uses explicit clipboard saves and the share sheet; it does not continuously monitor the clipboard.</p></details>
+              <details class="faq-item"><summary>Does Shelf-ish sync across devices?</summary><p>Clips are stored locally on each device. With iCloud sync enabled and available, saved clips and their context can sync through your own iCloud account. You can use Shelf-ish on one Mac without enabling sync.</p><p>If sync is not working, tell us which devices are involved, whether they use the same iCloud account, and what you see on each. Please do not send account details or private clip content.</p></details>
+              <details class="faq-item"><summary>How do expiring clips work?</summary><p>Unpinned clips can expire automatically after a set time. Pin important clips to keep them, or snooze their expiry when you need a little longer.</p></details>
+              <details class="faq-item"><summary>Which connectors are available?</summary><p>Safari, Excel, Obsidian and VS Code context are out now for Mac. Chrome and Slack are coming soon. <a class="text-link" href="#connector-setup">Find your connector’s setup steps</a>, then check your installed app’s Settings for the features available in that version.</p></details>
+              <details class="faq-item"><summary>Does context capture read everything?</summary><p>No. It works with eligible copies from sources you enable, subject to their permissions. Where supported, surrounding text is optional. Pause capture or switch off a source when you want it left alone. Missing source details are not guessed.</p><p><a class="text-link" href="privacy.html#policy">Read how saved context is handled ↗</a></p></details>
+              <details class="faq-item"><summary>Do summaries require Apple Intelligence?</summary><p>The optional language tools require a supported Mac with Apple Intelligence enabled, its on-device models ready, and a supported language and region. Capture, search and paste work without them. Review generated summaries and suggested code changes before using them.</p></details>
+              <details class="faq-item"><summary>Why is a preview or transcript missing?</summary><p>Link previews may need a network connection. Transcription and intelligence features also depend on permissions, supported capabilities and any required model downloads. Check the relevant settings, then try again. If it persists, tell us which type of clip is affected.</p></details>
+              <details class="faq-item"><summary>What if the app feels slow or stuck?</summary><p>Quit and reopen Shelf-ish, then check whether the issue affects one clip or every clip. If it persists, send the steps to reproduce it along with your app and operating system versions.</p></details>
+            </div>
+          </div>
+        </section>
+
+        <section class="information-section report-section" id="report-a-problem" aria-labelledby="report-heading">
+          <div class="container report-panel">
+            <div><p class="kicker">Still need a hand?</p><h2 id="report-heading">Tell us what<br>happened.</h2><p>A few details help us get to the useful part sooner.</p><a class="quiet-link" href="mailto:shelfishapp@gmail.com?subject=Shelf-ish%20support">Email support <span aria-hidden="true">↗</span></a></div>
+            <div><h3>What to include</h3><ul class="report-checklist"><li>Your Shelf-ish version, device model and operating system.</li><li>What you did, what you expected and what happened instead.</li><li>The clip type involved: text, a link, an image, audio or something else.</li><li>For sync issues, which devices were involved and whether iCloud sync was enabled.</li></ul><p class="help-note">A screenshot can help. Leave private clip content, account details and credentials out of your message.</p></div>
           </div>
         </section>
       </main>
 
-      <footer class="site-footer">
-        <div class="container site-footer__inner">
-          <div class="footer-bar">
-            <div>© <span data-year>2026</span> Shelf-ish. All rights reserved.</div>
-            <nav class="footer-nav" aria-label="Footer">
-              <a href="index.html">Home</a>
-              <a href="support.html">Support</a>
-              <a href="privacy.html">Privacy</a>
-            </nav>
-          </div>
-        </div>
-      </footer>
+      <footer class="site-footer home-footer"><div class="container"><div><strong>Shelf-ish</strong><span>© <span data-year>2026</span></span></div><nav aria-label="Footer"><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a><a href="mailto:shelfishapp@gmail.com">shelfishapp@gmail.com</a></nav></div></footer>
     </div>
   </body>
 </html>
