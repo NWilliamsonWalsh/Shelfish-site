@@ -11,7 +11,7 @@ includes the cards/context homepage, actual app captures in the device family,
 updated connector availability, Support and connector privacy disclosures.
 iPhone remains labelled coming soon.
 
-Support, feedback and privacy contact: shelfishapp@gmail.com.
+Support, feedback and privacy contact: support@shelfishclipboard.com.
 
 Original full-desktop captures, unused artwork experiments, local browser state
 and development notes are not part of this publication. Active app captures
