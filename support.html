@@ -108,6 +108,18 @@
                     <p>Safari manages website permissions. You can pause capture or change your surrounding-text choice in the extension.</p>
                   </div>
                 </details>
+                <details class="connector-guide" id="connect-chrome">
+                  <summary><img src="assets/connectors/chrome.png" width="44" height="44" alt=""><span class="connector-guide__label"><strong>Chrome</strong><span>Page title, link and optional nearby text</span></span><span class="guide-status">Out now</span></summary>
+                  <div class="connector-guide__body">
+                    <ol class="setup-steps">
+                      <li>Install Shelf-ish 1.2 or later on macOS 26 or later. In Settings → Capture, enable clipboard monitoring; in Settings → Connectors, switch on Chrome/source context.</li>
+                      <li><a class="text-link" href="https://chromewebstore.google.com/detail/shelf-ish/fbhmfnogepmlpngkdgmdojfnifcfhmpi">Install the free Shelf-ish Chrome extension</a>. Accept its capture disclosure and website access.</li>
+                      <li>Open the extension’s <strong>Connection &amp; privacy</strong> settings, choose <strong>Connect to Shelf-ish</strong> and approve the connection in the Mac app once.</li>
+                      <li>Select webpage text and copy as usual with <kbd>⌘C</kbd>. Open the saved clip to see its page title, source link and optional surrounding text.</li>
+                    </ol>
+                    <p>You can turn surrounding text off, pause a site or disconnect in the extension. Private windows, password fields and browser-internal pages are excluded. Some custom editors and copy buttons do not provide source context.</p>
+                  </div>
+                </details>
                 <details class="connector-guide" id="connect-excel">
                   <summary><img src="assets/connectors/excel.png" width="44" height="44" alt=""><span class="connector-guide__label"><strong>Excel</strong><span>Workbook, sheet, range and available labels</span></span><span class="guide-status">Out now</span></summary>
                   <div class="connector-guide__body">
@@ -142,7 +154,7 @@
                   </div>
                 </details>
               </div>
-              <div class="help-upcoming" aria-label="Upcoming connectors"><span>Coming soon...</span><span><img src="assets/connectors/chrome.png" width="24" height="24" alt=""> Chrome</span><span><img src="assets/connectors/slack.png" width="24" height="24" alt=""> Slack</span></div>
+              <div class="help-upcoming" aria-label="Upcoming connectors"><span>Coming soon...</span><span><img src="assets/connectors/slack.png" width="24" height="24" alt=""> Slack</span></div>
               <p class="help-note">Setup can vary by app version. Check Settings → Connectors for the controls available in your installed version.</p>
             </div>
           </div>
@@ -156,7 +168,7 @@
               <details class="faq-item"><summary>Does the app watch my clipboard all the time?</summary><p>On Mac, automatic clipboard capture is optional. You can pause capture, exclude apps or save manually instead. The forthcoming iPhone app uses explicit clipboard saves and the share sheet; it does not continuously monitor the clipboard.</p></details>
               <details class="faq-item"><summary>Does Shelf-ish sync across devices?</summary><p>Clips are stored locally on each device. With iCloud sync enabled and available, saved clips and their context can sync through your own iCloud account. You can use Shelf-ish on one Mac without enabling sync.</p><p>If sync is not working, tell us which devices are involved, whether they use the same iCloud account, and what you see on each. Please do not send account details or private clip content.</p></details>
               <details class="faq-item"><summary>How do expiring clips work?</summary><p>Unpinned clips can expire automatically after a set time. Pin important clips to keep them, or snooze their expiry when you need a little longer.</p></details>
-              <details class="faq-item"><summary>Which connectors are available?</summary><p>Safari, Excel, Obsidian and VS Code context are out now for Mac. Chrome and Slack are coming soon. <a class="text-link" href="#connector-setup">Find your connector’s setup steps</a>, then check your installed app’s Settings for the features available in that version.</p></details>
+              <details class="faq-item"><summary>Which connectors are available?</summary><p>Safari, Chrome, Excel, Obsidian and VS Code context are out now for Mac. Chrome requires Shelf-ish 1.2 or later and the separate Chrome Web Store extension. Slack is coming soon. <a class="text-link" href="#connector-setup">Find your connector’s setup steps</a>, then check your installed app’s Settings for the features available in that version.</p></details>
               <details class="faq-item"><summary>Does context capture read everything?</summary><p>No. It works with eligible copies from sources you enable, subject to their permissions. Where supported, surrounding text is optional. Pause capture or switch off a source when you want it left alone. Missing source details are not guessed.</p><p><a class="text-link" href="privacy.html#policy">Read how saved context is handled ↗</a></p></details>
               <details class="faq-item"><summary>Do summaries require Apple Intelligence?</summary><p>The optional language tools require a supported Mac with Apple Intelligence enabled, its on-device models ready, and a supported language and region. Capture, search and paste work without them. Review generated summaries and suggested code changes before using them.</p></details>
               <details class="faq-item"><summary>Why is a preview or transcript missing?</summary><p>Link previews may need a network connection. Transcription and intelligence features also depend on permissions, supported capabilities and any required model downloads. Check the relevant settings, then try again. If it persists, tell us which type of clip is affected.</p></details>
